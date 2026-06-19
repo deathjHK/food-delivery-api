@@ -1,10 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Models\Product;
+use App\Http\Controllers\Api\ProductController;
 
-// Liefert alle Produkte (Speisekarte) inkl. der zugehörigen Kategorie
-Route::get('/products', function () {
-    return Product::with('category')->get();
-});
+// Die Route verweist nun sauber auf die "index" Methode im ProductController
+Route::get('/products', [ProductController::class, 'index']);
