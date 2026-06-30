@@ -11,7 +11,7 @@ Containerisiertes Backend (Laravel 11) für eine Food-Delivery SPA.
 
 1. **Repository klonen:**
 ```bash
-git clone [URL_ZUM_REPOSITORY]
+git clone https://github.com/deathjHK/food-delivery-api
 cd food-delivery-api
 ```
 
