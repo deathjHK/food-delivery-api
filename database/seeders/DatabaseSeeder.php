@@ -19,125 +19,176 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // 2. Unsere echte Liebesbier-Speisekarte definieren
+        // 2. Die vollständige, originale Liebesbier-Speisekarte definieren
         $menu = [
-            'Frühstück & Brunch (bis 12:00 Uhr)' => [
+            'Frühstück & Brunch (Mo-So)' => [
                 [
-                    'name' => 'Das Liebesbier-Frühstück für Zwei', 
-                    'description' => 'Reichhaltige Auswahl an Landschinken, regionalem Käse, hausgemachtem Hummus, Avocadocreme, zwei weichgekochten Eiern, frischem Obst, Joghurt mit Granola, dazu Brotkorb und Croissants.', 
-                    'price' => 24.50, 
-                    'image_path' => '/images/fruehstueck_duo.jpg'
+                    'name' => 'Liebesbier Frühstücks- & Brunchbuffet', 
+                    'description' => 'Großes All-inclusive-Buffet: Frische Smoothies, hausgemachte süße und herzhafte Aufstriche, verschiedene Müslis und Granola, Auswahl an regionaler (veganer) Wurst und Käse, Antipasti, frisches Backhaus-Brot und Croissants. Inklusive Filterkaffee, Wasser und Säften zur Selbstbedienung.', 
+                    'price' => 24.90, 
+                    'image_path' => '/images/fruehstueck_buffet.jpg'
                 ],
                 [
-                    'name' => 'Shakshuka (Veggie)', 
-                    'description' => 'Zwei in pikanter Tomaten-Paprika-Salsa gegarte Eier, verfeinert mit Feta, frischem Koriander und serviert mit gegrilltem Sauerteigbrot.', 
-                    'price' => 11.80, 
-                    'image_path' => '/images/shakshuka.jpg'
+                    'name' => 'Upgrade: Zwei Eier (Spiegelei oder Rührei)', 
+                    'description' => 'Frisch zubereitete Eier nach Wahl von glücklichen Hühnern aus der Region als perfekte Ergänzung zum Buffet.', 
+                    'price' => 4.20, 
+                    'image_path' => '/images/fruehstueck_eier.jpg'
                 ],
                 [
-                    'name' => 'Strammer Max Craft-Style', 
-                    'description' => 'Herzhaftes Sauerteigbrot mit krossem Schinken aus der Region, zwei Spiegeleiern und eingelegten Gewürzgurken.', 
-                    'price' => 9.50, 
-                    'image_path' => '/images/strammer_max.jpg'
-                ],
-                [
-                    'name' => 'Acai-Granola Bowl (Vegan)', 
-                    'description' => 'Erfrischendes Acai-Püree getoppt mit hausgemachtem Knuspermüsli, Chiasamen, Kokosraspeln und frischen saisonalen Beeren.', 
-                    'price' => 8.90, 
-                    'image_path' => '/images/acai_bowl.jpg'
+                    'name' => 'Upgrade: Portion krosser Bacon', 
+                    'description' => 'Knusprig gebratener Bacon als herzhafter Sidekick.', 
+                    'price' => 2.90, 
+                    'image_path' => '/images/fruehstueck_bacon.jpg'
                 ],
             ],
 
-            'Mittagstisch (11:30 - 14:00 Uhr)' => [
+            'Mittagstisch (11:30 - 17:00 Uhr)' => [
                 [
-                    'name' => 'Wechselndes Mittagsgericht (Fleisch/Fisch)', 
-                    'description' => 'Unser wöchentlich wechselndes Mittags-Highlight frisch aus der Marktgrafen-Küche. Frag einfach unseren Service!', 
+                    'name' => 'Wochen-Mittagsgericht: Kreativ & Fleisch/Fisch', 
+                    'description' => 'Unser wöchentlich wechselndes, warmes Mittags-Highlight frisch aus der Marktgrafen-Küche.', 
                     'price' => 11.90, 
                     'image_path' => '/images/mittags_fleisch.jpg'
                 ],
                 [
-                    'name' => 'Wechselndes Mittagsgericht (Vegetarisch)', 
-                    'description' => 'Kreativ, leicht und vegetarisch oder vegan. Perfekt für die entspannte Mittagspause im Gastgarten.', 
+                    'name' => 'Wochen-Mittagsgericht: Best of Veggie / Vegan', 
+                    'description' => 'Kreative, leichtere fleischlose Kreation für die perfekte, entspannte Mittagspause.', 
                     'price' => 10.50, 
                     'image_path' => '/images/mittags_veggie.jpg'
                 ],
                 [
-                    'name' => 'Kleiner Mittagssalat mit Kernen', 
-                    'description' => 'Knackige Blattsalate mit Haus-Dressing, gerösteten Kernen und frischem Backhaus-Brot.', 
+                    'name' => 'Kleiner Mittagssalat', 
+                    'description' => 'Knackige saisonale Blattsalate mit Haus-Dressing und gerösteten Kernen.', 
                     'price' => 5.20, 
                     'image_path' => '/images/mittags_salat.jpg'
                 ],
             ],
 
-            'Bierbegleiter & Vorspeisen' => [
+            'Abendkarte - Bierbegleiter & Vorspeisen' => [
                 [
                     'name' => 'Liebesbier Fritten-Glück', 
-                    'description' => 'Knusprige, dicke Pommes mit geschmolzenem Cheddar, Röstzwiebeln und hausgemachter Bacon-Jam.', 
+                    'description' => 'Knusprige, dicke Pommes frites mit geschmolzenem Cheddar-Käse, krossen Röstzwiebeln und unserer hausgemachten Bacon-Jam.', 
                     'price' => 6.90, 
                     'image_path' => '/images/fritten_glueck.jpg'
                 ],
                 [
-                    'name' => 'Gebackene Oliven & Hummus', 
-                    'description' => 'Würziger, hausgemachter Kichererbsen-Hummus mit lauwarm gebackenen Riesenoliven und gegrilltem Sauerteigbrot.', 
+                    'name' => 'Hausgemachter Hummus & gebackene Oliven', 
+                    'description' => 'Kichererbsen-Hummus mit nativem Olivenöl, lauwarm gebackenen Riesenoliven und gegrilltem Sauerteigbrot.', 
                     'price' => 7.80, 
                     'image_path' => '/images/oliven_hummus.jpg'
                 ],
                 [
-                    'name' => 'Beef Tatar vom Weiderind', 
-                    'description' => 'Frisch geschnittenes Rindertatar (100g) mit Kapern, eingelegten Schalotten, Senf-Kaviar und Butter-Toast.', 
+                    'name' => 'Beef Tatar vom heimischen Weiderind', 
+                    'description' => 'Handgeschnittenes, mild gewürztes Rindertatar (100g) mit Kapern, eingelegten Schalotten, Senf-Kaviar und krossem Butter-Toast.', 
                     'price' => 14.20, 
                     'image_path' => '/images/beef_tatar.jpg'
                 ],
+                [
+                    'name' => 'Pimientos de Padrón', 
+                    'description' => 'Gegrillte milde Minipaprika mit grobem Meersalz und Olivenöl, serviert mit Baguette.', 
+                    'price' => 6.50, 
+                    'image_path' => '/images/pimientos.jpg'
+                ],
+                [
+                    'name' => 'Knoblauchbrot vom Grill', 
+                    'description' => 'Geröstetes Sauerteigbrot mit hausgemachter Knoblauch-Kräuterbutter und Meersalz.', 
+                    'price' => 4.80, 
+                    'image_path' => '/images/knoblauchbrot.jpg'
+                ],
             ],
 
-            'Burger' => [
+            'Abendkarte - Salate & Bowls' => [
                 [
-                    'name' => 'BBQ Bacon Burger', 
-                    'description' => 'Mit knusprigem Bacon, geschmorten Bier-Zwiebeln, würzigem Bergkäse und rauchiger Maisel & Friends BBQ-Sauce.', 
+                    'name' => 'Urban Art Vegan Bowl', 
+                    'description' => 'Nahrhafte Quinoa-Basis mit gebackenem Tofu, Süßkartoffel-Wedges, Granatapfelkernen, wildem Brokkoli und cremigem Erdnuss-Dressing.', 
+                    'price' => 13.20, 
+                    'image_path' => '/images/vegan_bowl.jpg'
+                ],
+                [
+                    'name' => 'Liebesbier Caesar Salad', 
+                    'description' => 'Knackiger Römersalat mit cremigem Caesar-Dressing, krossen Croûtons und gehobeltem Parmesan.', 
+                    'price' => 11.50, 
+                    'image_path' => '/images/caesar_salad.jpg'
+                ],
+                [
+                    'name' => 'Upgrade zur Bowl/Salat: Gegrillte Hähnchenbrust', 
+                    'description' => 'Saftig marinierte Streifen von der Hähnchenbrust frisch vom Grill.', 
+                    'price' => 4.90, 
+                    'image_path' => '/images/upgrade_haehnchen.jpg'
+                ],
+            ],
+
+            'Abendkarte - Verrückte Burger' => [
+                [
+                    'name' => 'Der Liebesbier-Burger', 
+                    'description' => '180g saftiges Rindfleisch vom regionalen Weiderind, würziger Bergkäse, geschmorte Bier-Zwiebeln, frischer Salat und unsere rauchige Maisel & Friends BBQ-Sauce auf softem Brioche-Bun.', 
                     'price' => 14.50, 
-                    'image_path' => '/images/baconburger.jpg'
+                    'image_path' => '/images/liebesbier_burger.jpg'
+                ],
+                [
+                    'name' => 'Classic Cheeseburger', 
+                    'description' => '180g heimisches Weiderind mit geschmolzenem Cheddar, knackigem Salat, Tomate, Gurke und unserer geheimen Haus-Sauce.', 
+                    'price' => 12.90, 
+                    'image_path' => '/images/cheeseburger.jpg'
                 ],
                 [
                     'name' => 'Veggie Falafel Burger', 
-                    'description' => 'Hausgemachtes, knuspriges Falafel-Patty mit cremigem Hummus, Gurken-Relish und veganer Zitronen-Mayo.', 
+                    'description' => 'Hausgemachtes, krosses Falafel-Patty mit cremigem Hummus, Gurken-Relish und veganer Zitronen-Mayonnaise.', 
                     'price' => 11.20, 
                     'image_path' => '/images/veggieburger.jpg'
                 ],
+                [
+                    'name' => 'Pulled Pork Craft Burger', 
+                    'description' => '12 Stunden slow-cooked Schweineschulter in Pale-Ale-Marinade, mit hausgemachtem knackigen Coleslaw und scharfen Jalapeños.', 
+                    'price' => 15.20, 
+                    'image_path' => '/images/pulled_pork.jpg'
+                ],
+                [
+                    'name' => 'Upgrade: Glutenfreies Burger-Brötchen', 
+                    'description' => 'Unser Burger-Upgrade aus Reis- und Maismehl für Allergiker.', 
+                    'price' => 1.20, 
+                    'image_path' => '/images/upgrade_glutenfrei.jpg'
+                ],
+                [
+                    'name' => 'Upgrade: Zusätzliches Rindfleisch-Patty', 
+                    'description' => 'Noch hungrig? Wir packen dir ein zweites 180g Weiderind-Patty auf deinen Burger.', 
+                    'price' => 6.90, 
+                    'image_path' => '/images/upgrade_patty.jpg'
+                ],
             ],
 
-            'Steaks & Hauptgerichte' => [
+            'Abendkarte - Steaks & Hauptgerichte' => [
                 [
                     'name' => 'Rumpsteak vom heimischen Weiderind (250g)', 
-                    'description' => 'Perfekt medium gegrillt, serviert mit hausgemachter Kräuterbutter, Ofenkartoffel und saurem Sauerrahm.', 
+                    'description' => 'Auf dem Punkt medium gegrillt, serviert mit hausgemachter Kräuterbutter, einer großen Ofenkartoffel und saurem Sauerrahm.', 
                     'price' => 28.90, 
                     'image_path' => '/images/rumpsteak.jpg'
                 ],
                 [
                     'name' => 'Gezupftes Schäufele Crossover', 
-                    'description' => 'Fränkischer Klassiker modern interpretiert: Zartes Schäufele-Fleisch in Dunkelbiersoße auf cremigem Kartoffel-Wirsing-Stampf.', 
+                    'description' => 'Tradition trifft Moderne: Zart geschmortes, gezupftes Schäufele-Fleisch in kräftiger Dunkelbiersoße auf cremigem Kartoffel-Wirsing-Stampf.', 
                     'price' => 17.90, 
                     'image_path' => '/images/schaufele.jpg'
                 ],
                 [
                     'name' => 'Brauhaus Fish & Chips', 
-                    'description' => 'Kabeljaufilet im knusprigen Bierteig aus Maisel\'s Weisse, serviert mit Erbsenpüree, Pommes und Remoulade.', 
+                    'description' => 'Kabeljaufilet im knusprig-luftigen Bierteig aus Maisel\'s Weisse, serviert mit Erbsenpüree, dicken Pommes und Remoulade.', 
                     'price' => 16.50, 
                     'image_path' => '/images/fish_chips.jpg'
-                ],
-                [
-                    'name' => 'Urban Art Vegan Bowl', 
-                    'description' => 'Quinoa, gebackener Tofu, Süßkartoffel-Wedges, Granatapfelkerne, wilder Brokkoli und cremiges Erdnuss-Dressing.', 
-                    'price' => 13.20, 
-                    'image_path' => '/images/vegan_bowl.jpg'
                 ],
             ],
 
             'Süßes für danach' => [
                 [
                     'name' => 'Warmes Schoko-Malz-Törtchen', 
-                    'description' => 'Mit flüssigem Kern, dunklem Stout-Spiegel und einer Kugel cremigem Vanilleeis.', 
+                    'description' => 'Mit flüssigem Schokoladenkern, dunklem Stout-Bier-Spiegel und einer Kugel cremigen Vanilleeis.', 
                     'price' => 7.50, 
                     'image_path' => '/images/schokotoertchen.jpg'
+                ],
+                [
+                    'name' => 'Affogato al Caffè', 
+                    'description' => 'Eine Kugel cremiges Vanilleeis „ertränkt“ in einem heißen, kräftigen Espresso.', 
+                    'price' => 3.90, 
+                    'image_path' => '/images/affogato.jpg'
                 ],
             ],
 
@@ -304,9 +355,8 @@ class DatabaseSeeder extends Seeder
 
             // Produkte zuordnen
             foreach ($products as $productData) {
-                // updateOrCreate sucht nach dem Namen. 
-                // Wenn das Produkt schon existiert, werden nur Preis/Beschreibung aktualisiert.
-                // Wenn nicht, wird es neu hinzugefügt.
+                // updateOrCreate sucht nach dem Namen.
+                // Verhindert doppelte Einträge beim wiederholten Ausführen des Seeders.
                 $category->products()->updateOrCreate(
                     ['name' => $productData['name']], // Suchkriterium
                     $productData // Daten zum Aktualisieren/Anlegen
