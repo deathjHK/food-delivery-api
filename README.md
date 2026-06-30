@@ -51,7 +51,7 @@ Durch den Seeder existiert folgender Test-Account:
 **Wichtig:** Bei allen Anfragen muss der Header `Accept: application/json` gesetzt sein.
 
 ### Öffentlich
-* `GET /api/products` (Filter-Option: `?category=Burger`)
+* `GET /api/products` (Filter-Option: `?category=Getränke`)
 * `POST /api/register` (`name`, `email`, `password`)
 * `POST /api/login` (`email`, `password`)
 * `POST /api/checkout` (`items` Array mit `product_id`, `quantity`)
