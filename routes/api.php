@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\OrderController;
+
+// Checkout Simulation
+Route::post('/checkout', [OrderController::class, 'checkout']);
 
 // Öffentliche Speisekarte
 Route::get('/products', [ProductController::class, 'index']);
