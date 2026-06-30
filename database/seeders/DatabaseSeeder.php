@@ -10,12 +10,14 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // 1. Einen Test-Nutzer erstellen (für eure Login-Tests)
-        User::factory()->create([
-            'name' => 'Max Mustermann',
-            'email' => 'max@example.com',
-            'password' => bcrypt('geheimesPasswort123'),
-        ]);
+        // 1. User sicher anlegen (firstOrCreate = Nur anlegen, wenn die E-Mail nicht existiert)
+        User::firstOrCreate(
+            ['email' => 'max@example.com'], // Suchkriterium
+            [
+                'name' => 'Max Mustermann',
+                'password' => bcrypt('geheimesPasswort123'),
+            ]
+        );
 
         // 2. Unsere echte Liebesbier-Speisekarte definieren
         $menu = [
@@ -296,13 +298,20 @@ class DatabaseSeeder extends Seeder
         ];
 
         // 3. Die Speisekarte in die Datenbank eintragen
+        // 3. Speisekarte intelligent in die Datenbank eintragen
         foreach ($menu as $categoryName => $products) {
-            // Kategorie erstellen
-            $category = Category::create(['name' => $categoryName]);
+            // Kategorie nur anlegen, wenn der Name noch nicht existiert
+            $category = Category::firstOrCreate(['name' => $categoryName]);
 
-            // Alle Produkte dieser Kategorie zuordnen und speichern
+            // Produkte zuordnen
             foreach ($products as $productData) {
-                $category->products()->create($productData);
+                // updateOrCreate sucht nach dem Namen. 
+                // Wenn der Burger schon existiert, werden nur Preis/Beschreibung aktualisiert.
+                // Wenn nicht, wird er neu hinzugefügt.
+                $category->products()->updateOrCreate(
+                    ['name' => $productData['name']], // Suchkriterium
+                    $productData // Daten zum Aktualisieren/Anlegen
+                );
             }
         }
     }
