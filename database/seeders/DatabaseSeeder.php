@@ -21,6 +21,54 @@ class DatabaseSeeder extends Seeder
 
         // 2. Unsere echte Liebesbier-Speisekarte definieren
         $menu = [
+            'Frühstück & Brunch (bis 12:00 Uhr)' => [
+                [
+                    'name' => 'Das Liebesbier-Frühstück für Zwei', 
+                    'description' => 'Reichhaltige Auswahl an Landschinken, regionalem Käse, hausgemachtem Hummus, Avocadocreme, zwei weichgekochten Eiern, frischem Obst, Joghurt mit Granola, dazu Brotkorb und Croissants.', 
+                    'price' => 24.50, 
+                    'image_path' => '/images/fruehstueck_duo.jpg'
+                ],
+                [
+                    'name' => 'Shakshuka (Veggie)', 
+                    'description' => 'Zwei in pikanter Tomaten-Paprika-Salsa gegarte Eier, verfeinert mit Feta, frischem Koriander und serviert mit gegrilltem Sauerteigbrot.', 
+                    'price' => 11.80, 
+                    'image_path' => '/images/shakshuka.jpg'
+                ],
+                [
+                    'name' => 'Strammer Max Craft-Style', 
+                    'description' => 'Herzhaftes Sauerteigbrot mit krossem Schinken aus der Region, zwei Spiegeleiern und eingelegten Gewürzgurken.', 
+                    'price' => 9.50, 
+                    'image_path' => '/images/strammer_max.jpg'
+                ],
+                [
+                    'name' => 'Acai-Granola Bowl (Vegan)', 
+                    'description' => 'Erfrischendes Acai-Püree getoppt mit hausgemachtem Knuspermüsli, Chiasamen, Kokosraspeln und frischen saisonalen Beeren.', 
+                    'price' => 8.90, 
+                    'image_path' => '/images/acai_bowl.jpg'
+                ],
+            ],
+
+            'Mittagstisch (11:30 - 14:00 Uhr)' => [
+                [
+                    'name' => 'Wechselndes Mittagsgericht (Fleisch/Fisch)', 
+                    'description' => 'Unser wöchentlich wechselndes Mittags-Highlight frisch aus der Marktgrafen-Küche. Frag einfach unseren Service!', 
+                    'price' => 11.90, 
+                    'image_path' => '/images/mittags_fleisch.jpg'
+                ],
+                [
+                    'name' => 'Wechselndes Mittagsgericht (Vegetarisch)', 
+                    'description' => 'Kreativ, leicht und vegetarisch oder vegan. Perfekt für die entspannte Mittagspause im Gastgarten.', 
+                    'price' => 10.50, 
+                    'image_path' => '/images/mittags_veggie.jpg'
+                ],
+                [
+                    'name' => 'Kleiner Mittagssalat mit Kernen', 
+                    'description' => 'Knackige Blattsalate mit Haus-Dressing, gerösteten Kernen und frischem Backhaus-Brot.', 
+                    'price' => 5.20, 
+                    'image_path' => '/images/mittags_salat.jpg'
+                ],
+            ],
+
             'Bierbegleiter & Vorspeisen' => [
                 [
                     'name' => 'Liebesbier Fritten-Glück', 
@@ -44,12 +92,6 @@ class DatabaseSeeder extends Seeder
 
             'Burger' => [
                 [
-                    'name' => 'Classic Cheeseburger', 
-                    'description' => 'Saftiges Rindfleisch (180g) vom regionalen Weiderind mit Cheddar, Salat, Tomate und unserer geheimen Haus-Sauce.', 
-                    'price' => 12.90, 
-                    'image_path' => '/images/cheeseburger.jpg'
-                ],
-                [
                     'name' => 'BBQ Bacon Burger', 
                     'description' => 'Mit knusprigem Bacon, geschmorten Bier-Zwiebeln, würzigem Bergkäse und rauchiger Maisel & Friends BBQ-Sauce.', 
                     'price' => 14.50, 
@@ -60,12 +102,6 @@ class DatabaseSeeder extends Seeder
                     'description' => 'Hausgemachtes, knuspriges Falafel-Patty mit cremigem Hummus, Gurken-Relish und veganer Zitronen-Mayo.', 
                     'price' => 11.20, 
                     'image_path' => '/images/veggieburger.jpg'
-                ],
-                [
-                    'name' => 'Pulled Pork Craft Burger', 
-                    'description' => '12 Stunden slow-cooked Schweineschulter in Pale-Ale-Marinade, mit knackigem Coleslaw und Jalapeños auf Brioche-Bun.', 
-                    'price' => 15.20, 
-                    'image_path' => '/images/pulled_pork.jpg'
                 ],
             ],
 
@@ -87,42 +123,6 @@ class DatabaseSeeder extends Seeder
                     'description' => 'Kabeljaufilet im knusprigen Bierteig aus Maisel\'s Weisse, serviert mit Erbsenpüree, Pommes und Remoulade.', 
                     'price' => 16.50, 
                     'image_path' => '/images/fish_chips.jpg'
-                ],
-            ],
-
-            'Pizza' => [
-                [
-                    'name' => 'Pizza Margherita', 
-                    'description' => 'Der neapolitanische Klassiker mit fruchtigen San Marzano Tomaten, frischem Mozzarella und Basilikum.', 
-                    'price' => 9.50, 
-                    'image_path' => '/images/margherita.jpg'
-                ],
-                [
-                    'name' => 'Pizza Diavola', 
-                    'description' => 'Scharfe italienische Salami, feurige Jalapeños, rote Zwiebeln und frisch geriebener Parmesan.', 
-                    'price' => 11.50, 
-                    'image_path' => '/images/diavola.jpg'
-                ],
-                [
-                    'name' => 'Pizza Treber-Spezial', 
-                    'description' => 'Mit Malz-Treber im Teig, belegt mit Landschinken, wildem Rucola und gehobeltem würzigen Bergkäse.', 
-                    'price' => 13.80, 
-                    'image_path' => '/images/pizza_treber.jpg'
-                ],
-            ],
-
-            'Sushi & Bowls' => [
-                [
-                    'name' => 'Maki Mix (12 Stück)', 
-                    'description' => 'Frischer Lachs, Thunfisch und Gurke, serviert mit eingelegtem Ingwer, Wasabi und salziger Sojasauce.', 
-                    'price' => 12.90, 
-                    'image_path' => '/images/maki.jpg'
-                ],
-                [
-                    'name' => 'Salmon Poke Bowl', 
-                    'description' => 'Lauwarmer Sushi-Reis, frischer Lachs, Edamame, Avocado, Mango-Würfel und hausgemachtes Teriyaki-Dressing.', 
-                    'price' => 14.50, 
-                    'image_path' => '/images/pokebowl.jpg'
                 ],
                 [
                     'name' => 'Urban Art Vegan Bowl', 
@@ -297,7 +297,6 @@ class DatabaseSeeder extends Seeder
             ]
         ];
 
-        // 3. Die Speisekarte in die Datenbank eintragen
         // 3. Speisekarte intelligent in die Datenbank eintragen
         foreach ($menu as $categoryName => $products) {
             // Kategorie nur anlegen, wenn der Name noch nicht existiert
@@ -306,8 +305,8 @@ class DatabaseSeeder extends Seeder
             // Produkte zuordnen
             foreach ($products as $productData) {
                 // updateOrCreate sucht nach dem Namen. 
-                // Wenn der Burger schon existiert, werden nur Preis/Beschreibung aktualisiert.
-                // Wenn nicht, wird er neu hinzugefügt.
+                // Wenn das Produkt schon existiert, werden nur Preis/Beschreibung aktualisiert.
+                // Wenn nicht, wird es neu hinzugefügt.
                 $category->products()->updateOrCreate(
                     ['name' => $productData['name']], // Suchkriterium
                     $productData // Daten zum Aktualisieren/Anlegen
