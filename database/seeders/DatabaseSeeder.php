@@ -17,56 +17,128 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('geheimesPasswort123'),
         ]);
 
-        // 2. Unsere echte Speisekarte definieren (inkl. aller Speisen und der kompletten Bierauswahl)
+        // 2. Unsere echte Liebesbier-Speisekarte definieren
         $menu = [
+            'Bierbegleiter & Vorspeisen' => [
+                [
+                    'name' => 'Liebesbier Fritten-Glück', 
+                    'description' => 'Knusprige, dicke Pommes mit geschmolzenem Cheddar, Röstzwiebeln und hausgemachter Bacon-Jam.', 
+                    'price' => 6.90, 
+                    'image_path' => '/images/fritten_glueck.jpg'
+                ],
+                [
+                    'name' => 'Gebackene Oliven & Hummus', 
+                    'description' => 'Würziger, hausgemachter Kichererbsen-Hummus mit lauwarm gebackenen Riesenoliven und gegrilltem Sauerteigbrot.', 
+                    'price' => 7.80, 
+                    'image_path' => '/images/oliven_hummus.jpg'
+                ],
+                [
+                    'name' => 'Beef Tatar vom Weiderind', 
+                    'description' => 'Frisch geschnittenes Rindertatar (100g) mit Kapern, eingelegten Schalotten, Senf-Kaviar und Butter-Toast.', 
+                    'price' => 14.20, 
+                    'image_path' => '/images/beef_tatar.jpg'
+                ],
+            ],
+
             'Burger' => [
                 [
                     'name' => 'Classic Cheeseburger', 
-                    'description' => 'Saftiges Rindfleisch (180g) mit Cheddar, Salat, Tomate und unserer Haus-Sauce.', 
-                    'price' => 8.90, 
+                    'description' => 'Saftiges Rindfleisch (180g) vom regionalen Weiderind mit Cheddar, Salat, Tomate und unserer geheimen Haus-Sauce.', 
+                    'price' => 12.90, 
                     'image_path' => '/images/cheeseburger.jpg'
                 ],
                 [
                     'name' => 'BBQ Bacon Burger', 
-                    'description' => 'Mit knusprigem Bacon, Röstzwiebeln und rauchiger BBQ-Sauce.', 
-                    'price' => 10.50, 
+                    'description' => 'Mit knusprigem Bacon, geschmorten Bier-Zwiebeln, würzigem Bergkäse und rauchiger Maisel & Friends BBQ-Sauce.', 
+                    'price' => 14.50, 
                     'image_path' => '/images/baconburger.jpg'
                 ],
                 [
                     'name' => 'Veggie Falafel Burger', 
-                    'description' => 'Hausgemachtes Falafel-Patty mit Hummus und veganer Mayo.', 
-                    'price' => 9.20, 
+                    'description' => 'Hausgemachtes, knuspriges Falafel-Patty mit cremigem Hummus, Gurken-Relish und veganer Zitronen-Mayo.', 
+                    'price' => 11.20, 
                     'image_path' => '/images/veggieburger.jpg'
                 ],
+                [
+                    'name' => 'Pulled Pork Craft Burger', 
+                    'description' => '12 Stunden slow-cooked Schweineschulter in Pale-Ale-Marinade, mit knackigem Coleslaw und Jalapeños auf Brioche-Bun.', 
+                    'price' => 15.20, 
+                    'image_path' => '/images/pulled_pork.jpg'
+                ],
             ],
+
+            'Steaks & Hauptgerichte' => [
+                [
+                    'name' => 'Rumpsteak vom heimischen Weiderind (250g)', 
+                    'description' => 'Perfekt medium gegrillt, serviert mit hausgemachter Kräuterbutter, Ofenkartoffel und saurem Sauerrahm.', 
+                    'price' => 28.90, 
+                    'image_path' => '/images/rumpsteak.jpg'
+                ],
+                [
+                    'name' => 'Gezupftes Schäufele Crossover', 
+                    'description' => 'Fränkischer Klassiker modern interpretiert: Zartes Schäufele-Fleisch in Dunkelbiersoße auf cremigem Kartoffel-Wirsing-Stampf.', 
+                    'price' => 17.90, 
+                    'image_path' => '/images/schaufele.jpg'
+                ],
+                [
+                    'name' => 'Brauhaus Fish & Chips', 
+                    'description' => 'Kabeljaufilet im knusprigen Bierteig aus Maisel\'s Weisse, serviert mit Erbsenpüree, Pommes und Remoulade.', 
+                    'price' => 16.50, 
+                    'image_path' => '/images/fish_chips.jpg'
+                ],
+            ],
+
             'Pizza' => [
                 [
                     'name' => 'Pizza Margherita', 
-                    'description' => 'Der neapolitanische Klassiker mit San Marzano Tomaten und frischem Mozzarella.', 
+                    'description' => 'Der neapolitanische Klassiker mit fruchtigen San Marzano Tomaten, frischem Mozzarella und Basilikum.', 
                     'price' => 9.50, 
                     'image_path' => '/images/margherita.jpg'
                 ],
                 [
                     'name' => 'Pizza Diavola', 
-                    'description' => 'Scharfe italienische Salami, Jalapeños und rote Zwiebeln.', 
+                    'description' => 'Scharfe italienische Salami, feurige Jalapeños, rote Zwiebeln und frisch geriebener Parmesan.', 
                     'price' => 11.50, 
                     'image_path' => '/images/diavola.jpg'
                 ],
+                [
+                    'name' => 'Pizza Treber-Spezial', 
+                    'description' => 'Mit Malz-Treber im Teig, belegt mit Landschinken, wildem Rucola und gehobeltem würzigen Bergkäse.', 
+                    'price' => 13.80, 
+                    'image_path' => '/images/pizza_treber.jpg'
+                ],
             ],
+
             'Sushi & Bowls' => [
                 [
                     'name' => 'Maki Mix (12 Stück)', 
-                    'description' => 'Frischer Lachs, Thunfisch und Gurke, serviert mit Wasabi und Ingwer.', 
+                    'description' => 'Frischer Lachs, Thunfisch und Gurke, serviert mit eingelegtem Ingwer, Wasabi und salziger Sojasauce.', 
                     'price' => 12.90, 
                     'image_path' => '/images/maki.jpg'
                 ],
                 [
                     'name' => 'Salmon Poke Bowl', 
-                    'description' => 'Sushi-Reis, frischer Lachs, Edamame, Avocado und Teriyaki-Dressing.', 
+                    'description' => 'Lauwarmer Sushi-Reis, frischer Lachs, Edamame, Avocado, Mango-Würfel und hausgemachtes Teriyaki-Dressing.', 
                     'price' => 14.50, 
                     'image_path' => '/images/pokebowl.jpg'
                 ],
+                [
+                    'name' => 'Urban Art Vegan Bowl', 
+                    'description' => 'Quinoa, gebackener Tofu, Süßkartoffel-Wedges, Granatapfelkerne, wilder Brokkoli und cremiges Erdnuss-Dressing.', 
+                    'price' => 13.20, 
+                    'image_path' => '/images/vegan_bowl.jpg'
+                ],
             ],
+
+            'Süßes für danach' => [
+                [
+                    'name' => 'Warmes Schoko-Malz-Törtchen', 
+                    'description' => 'Mit flüssigem Kern, dunklem Stout-Spiegel und einer Kugel cremigem Vanilleeis.', 
+                    'price' => 7.50, 
+                    'image_path' => '/images/schokotoertchen.jpg'
+                ],
+            ],
+
             'Getränke' => [
                 [
                     'name' => 'Coca Cola (0,5l)', 
@@ -81,9 +153,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/eistee.jpg'
                 ],
                 
-                // ==========================================
-                // MAISEL'S WEISSE KLASSIKER
-                // ==========================================
+                // --- MAISEL'S WEISSE KLASSIKER ---
                 [
                     'name' => 'Maisel\'s Weisse Original (0,5l)', 
                     'description' => 'Die rötlich-leuchtende Weissbierspezialität. Frisch und dynamisch im Geschmack, mit feiner Hefenote und typischem Bananenaroma.', 
@@ -115,9 +185,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/maisels_alkoholfrei.jpg'
                 ],
 
-                // ==========================================
-                // MAISEL & FRIENDS (SESSION & CRAFT)
-                // ==========================================
+                // --- MAISEL & FRIENDS (SESSION & CRAFT) ---
                 [
                     'name' => 'Maisel & Friends Pale Ale (0,3l)', 
                     'description' => 'Goldgelb, unkompliziert und extrem süffig. Besticht durch ein frisches Aroma von Zitrus und Maracuja sowie eine angenehme Hopfenbittere.', 
@@ -143,6 +211,12 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/friends_westcoast.jpg'
                 ],
                 [
+                    'name' => 'Maisel & Friends Europhia (0,33l)', 
+                    'description' => 'Die perfekte Harmonie aus europäischer Braukunst und modernen Hopfennoten. Ein spritziges, fülliges Geschmackserlebnis mit feiner Fruchtnote.', 
+                    'price' => 4.80, 
+                    'image_path' => '/images/friends_europhia.jpg'
+                ],
+                [
                     'name' => 'Maisel & Friends Hoppy Hell (0,5l)', 
                     'description' => 'Bayerische Tradition modern interpretiert. Ein klassisch süffiges, helles Lagerfeuer-Bier mit einem fruchtig-frischen Hopfen-Kick.', 
                     'price' => 4.50, 
@@ -154,16 +228,8 @@ class DatabaseSeeder extends Seeder
                     'price' => 4.30, 
                     'image_path' => '/images/friends_urban_alkoholfrei.jpg'
                 ],
-                [
-                    'name' => 'Maisel & Friends Europhia (0,33l)', 
-                    'description' => 'Die perfekte Harmonie aus europäischer Braukunst und modernen Hopfennoten. Ein spritziges, fülliges Geschmackserlebnis mit feiner Fruchtnote.', 
-                    'price' => 4.80, 
-                    'image_path' => '/images/friends_europhia.jpg'
-                ],
 
-                // ==========================================
-                // BAYREUTHER BIERBRAUEREI (AKTIEN)
-                // ==========================================
+                // --- BAYREUTHER BIERBRAUEREI (AKTIEN) ---
                 [
                     'name' => 'Bayreuther Hell (0,5l)', 
                     'description' => 'Der süffige Klassiker aus der Heimat. Ehrlich, frisch und traditionell hopfig – der absolute Favorit für jede Gelegenheit.', 
@@ -195,9 +261,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/aktien_pils.jpg'
                 ],
 
-                // ==========================================
-                // WEISMAINER PÜLS-BRÄU
-                // ==========================================
+                // --- WEISMAINER PÜLS-BRÄU ---
                 [
                     'name' => 'Weismainer Premium Pils (0,5l)', 
                     'description' => 'Ein edles, feinherbes Pilsner von bester Qualität. Gebraut mit klarem Jurawasser und feinstem Aromahopfen.', 
