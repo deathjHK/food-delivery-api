@@ -1,4 +1,4 @@
-readme_content = """# Food-Delivery REST-API
+Food-Delivery REST-API
 
 Containerisiertes Backend (Laravel 11) für eine Food-Delivery SPA.
 
