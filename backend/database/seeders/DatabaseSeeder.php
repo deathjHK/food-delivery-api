@@ -1,6 +1,3 @@
-Hier ist die nochmals erweiterte `DatabaseSeeder.php`. Ich habe in der Kategorie **Getränke** die generischen Softdrinks entfernt und stattdessen die komplette, originale alkoholfreie Palette der **Weismainer Püls-Bräu (Püls-Erfrischungsgetränke & Mineralbrunnen)** hinzugefügt – inklusive aller Püls-Limonaden, Säfte, Schorlen und dem Jura-Mineralwasser.
-
-```php
 <?php
 
 namespace Database\Seeders;
