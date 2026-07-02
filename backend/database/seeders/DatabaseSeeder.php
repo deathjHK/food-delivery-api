@@ -1,3 +1,6 @@
+Hier ist die nochmals erweiterte `DatabaseSeeder.php`. Ich habe in der Kategorie **Getränke** die generischen Softdrinks entfernt und stattdessen die komplette, originale alkoholfreie Palette der **Weismainer Püls-Bräu (Püls-Erfrischungsgetränke & Mineralbrunnen)** hinzugefügt – inklusive aller Püls-Limonaden, Säfte, Schorlen und dem Jura-Mineralwasser.
+
+```php
 <?php
 
 namespace Database\Seeders;
@@ -19,7 +22,7 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // 2. Die vollständige, originale Liebesbier-Speisekarte definieren
+        // 2. Die vollständige, originale Liebesbier-Speisekarte mit Weismainer Getränken definieren
         $menu = [
             'Frühstück & Brunch (Mo-So)' => [
                 [
@@ -193,15 +196,66 @@ class DatabaseSeeder extends Seeder
             ],
 
             'Getränke' => [
+                // --- WEISMAINER MINERALBRUNNEN (WASSER) ---
                 [
-                    'name' => 'Coca Cola (0,5l)', 
-                    'description' => 'Eiskalt und erfrischend.', 
-                    'price' => 2.50, 
-                    'image_path' => '/images/cola.jpg'
+                    'name' => 'Weismainer Püls Jura Quelle Sprudel (0,5l)', 
+                    'description' => 'Das natürliche, reine Mineralwasser aus den Tiefen des Jura-Gesteins. Herzhaft prickelnd mit viel Kohlensäure.', 
+                    'price' => 3.20, 
+                    'image_path' => '/images/weismainer_sprudel.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Jura Quelle Medium (0,5l)', 
+                    'description' => 'Natürliches Jura-Mineralwasser, feinperlig und sanft mineralisiert. Der ideale Begleiter zum Essen.', 
+                    'price' => 3.20, 
+                    'image_path' => '/images/weismainer_medium.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Jura Quelle Naturell (0,5l)', 
+                    'description' => 'Stilles Jura-Mineralwasser komplett ohne Kohlensäure. Besonders weich und erfrischend.', 
+                    'price' => 3.20, 
+                    'image_path' => '/images/weismainer_naturell.jpg'
+                ],
+
+                // --- PÜLS ERFRISCHUNGSGETRÄNKE (SOFT DRINKS) ---
+                [
+                    'name' => 'Weismainer Püls Cola (0,5l)', 
+                    'description' => 'Der koffeinhaltige Klassiker aus Weismain. Voller Geschmack und die perfekte süße Erfrischung.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/weismainer_cola.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Cola-Mix (0,5l)', 
+                    'description' => 'Das fränkische Nationalgetränk: Die perfekte, spritzige Mischung aus Cola und fruchtiger Orangenlimonade.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/weismainer_colamix.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Orangenlimonade (0,5l)', 
+                    'description' => 'Fruchtig-süße Orangenlimonade mit echtem Fruchtsaftkonzentrat für den vollen Geschmack.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/weismainer_orange.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Zitronenlimonade (0,5l)', 
+                    'description' => 'Die klassische, glasklare Zitronenlimonade. Spritzig, süß-säuerlich und maximal erfrischend.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/weismainer_zitrone.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Apfelschorle (0,5l)', 
+                    'description' => 'Fruchtige Schorle mit hohem Apfelsaftanteil und reinem Jura-Mineralwasser. Ohne Zuckerzusatz.', 
+                    'price' => 3.90, 
+                    'image_path' => '/images/weismainer_apfelschorle.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Iso-Sport Fit (0,5l)', 
+                    'description' => 'Isotonisches Erfrischungsgetränk mit Citrus-Geschmack. Kalorienarm und vollgepackt mit wichtigen Vitaminen.', 
+                    'price' => 3.80, 
+                    'image_path' => '/images/weismainer_isosport.jpg'
                 ],
                 [
                     'name' => 'Hausgemachter Eistee (0,4l)', 
-                    'description' => 'Pfirsich-Eistee mit frischer Minze und Zitrone.', 
+                    'description' => 'Liebesbier-Spezialität: Pfirsich-Eistee mit frischer Minze und Zitrone.', 
                     'price' => 4.20, 
                     'image_path' => '/images/eistee.jpg'
                 ],
@@ -314,7 +368,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/aktien_pils.jpg'
                 ],
 
-                // --- WEISMAINER PÜLS-BRÄU ---
+                // --- WEISMAINER PÜLS-BRÄU (BIERE) ---
                 [
                     'name' => 'Weismainer Premium Pils (0,5l)', 
                     'description' => 'Ein edles, feinherbes Pilsner von bester Qualität. Gebraut mit klarem Jurawasser und feinstem Aromahopfen.', 
@@ -365,3 +419,5 @@ class DatabaseSeeder extends Seeder
         }
     }
 }
+
+```
