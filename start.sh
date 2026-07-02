@@ -32,8 +32,8 @@ CACHE_STORE=database
 
 VITE_API_BASE=http://localhost:8000/api
 EOF
-    echo "Default .env created."
-fi
+echo "Default .env created."
+
 
 
 # 1. Create .env if it doesn't exist
@@ -63,8 +63,8 @@ CACHE_STORE=database
 
 VITE_API_BASE=http://localhost:8000/api
 EOF
-    echo "Default .env created."
-fi
+echo "Default .env created."
+
 
 # 2. Ensure backend dependencies exist
 if [ ! -f "backend/vendor/autoload.php" ]; then
