@@ -10,16 +10,16 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // 1. User sicher anlegen (firstOrCreate = Nur anlegen, wenn die E-Mail nicht existiert)
+        // 1. User sicher anlegen
         User::firstOrCreate(
-            ['email' => 'max@example.com'], // Suchkriterium
+            ['email' => 'max@example.com'],
             [
                 'name' => 'Max Mustermann',
                 'password' => bcrypt('geheimesPasswort123'),
             ]
         );
 
-        // 2. Die vollständige, originale Liebesbier-Speisekarte mit Weismainer Getränken definieren
+        // 2. Speisekarte inklusive der aktualisierten Weismainer-Vibe-Erfrischungsgetränke
         $menu = [
             'Frühstück & Brunch (Mo-So)' => [
                 [
@@ -193,66 +193,116 @@ class DatabaseSeeder extends Seeder
             ],
 
             'Getränke' => [
-                // --- WEISMAINER MINERALBRUNNEN (WASSER) ---
+                // === AKTUALISIERT: WEISMAINER ERFRISCHUNGSGETRÄNKE (NEUES SPAẞGETRÄNK/VIBE SORTIMENT) ===
                 [
-                    'name' => 'Weismainer Püls Jura Quelle Sprudel (0,5l)', 
-                    'description' => 'Das natürliche, reine Mineralwasser aus den Tiefen des Jura-Gesteins. Herzhaft prickelnd mit viel Kohlensäure.', 
-                    'price' => 3.20, 
-                    'image_path' => '/images/weismainer_sprudel.jpg'
-                ],
-                [
-                    'name' => 'Weismainer Püls Jura Quelle Medium (0,5l)', 
-                    'description' => 'Natürliches Jura-Mineralwasser, feinperlig und sanft mineralisiert. Der ideale Begleiter zum Essen.', 
-                    'price' => 3.20, 
-                    'image_path' => '/images/weismainer_medium.jpg'
-                ],
-                [
-                    'name' => 'Weismainer Püls Jura Quelle Naturell (0,5l)', 
-                    'description' => 'Stilles Jura-Mineralwasser komplett ohne Kohlensäure. Besonders weich und erfrischend.', 
-                    'price' => 3.20, 
-                    'image_path' => '/images/weismainer_naturell.jpg'
-                ],
-
-                // --- PÜLS ERFRISCHUNGSGETRÄNKE (SOFT DRINKS) ---
-                [
-                    'name' => 'Weismainer Püls Cola (0,5l)', 
-                    'description' => 'Der koffeinhaltige Klassiker aus Weismain. Voller Geschmack und die perfekte süße Erfrischung.', 
+                    'name' => 'Weismainer Cola (0,5l)', 
+                    'description' => 'Dein Spaßgetränk. Dein Vibe. Der klassische, erfrischende Cola-Genuss mit anregendem Koffein.', 
                     'price' => 3.60, 
                     'image_path' => '/images/weismainer_cola.jpg'
                 ],
                 [
-                    'name' => 'Weismainer Püls Cola-Mix (0,5l)', 
-                    'description' => 'Das fränkische Nationalgetränk: Die perfekte, spritzige Mischung aus Cola und fruchtiger Orangenlimonade.', 
+                    'name' => 'Weismainer Cola Zero (0,5l)', 
+                    'description' => 'Voller Cola-Geschmack, absolut zuckerfrei. Der leichte Vibe ohne Kalorien.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_colamix.jpg'
+                    'image_path' => '/images/weismainer_cola_zero.jpg'
                 ],
                 [
+                    'name' => 'Weismainer Mixx (0,5l)', 
+                    'description' => 'Die perfekte Kombination aus spritzig-erfrischender Cola und fruchtiger Orangenlimonade.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/weismainer_mixx.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Mixx Zero (0,5l)', 
+                    'description' => 'Der beliebte Cola-Orangen-Mix als zuckerfreie Variante – maximaler Geschmack, null Zucker.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/weismainer_mixx_zero.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Mate (0,5l)', 
+                    'description' => 'Der ultimative, belebende Mate-Kick mit dem typisch herben und rauchigen Aroma.', 
+                    'price' => 3.80, 
+                    'image_path' => '/images/weismainer_mate.jpg'
+                ],
+
+                // === JURA QUELLE MINERALWASSER ===
+                [
+                    'name' => 'Jura Quelle Sprudel (0,5l)', 
+                    'description' => 'Natürliches Mineralwasser aus unberührten, tiefen Gesteinsschichten des Juras. Besonders spritzig mit viel Kohlensäure.', 
+                    'price' => 3.20, 
+                    'image_path' => '/images/jura_quelle_sprudel.jpg'
+                ],
+                [
+                    'name' => 'Jura Quelle Medium (0,5l)', 
+                    'description' => 'Das reine Jura-Mineralwasser mit harmonisch reduzierter Kohlensäure. Sanft und angenehm zu trinken.', 
+                    'price' => 3.20, 
+                    'image_path' => '/images/jura_quelle_medium.jpg'
+                ],
+                [
+                    'name' => 'Jura Quelle Naturell (0,5l)', 
+                    'description' => 'Gänzlich ohne Kohlensäure. Das stille, naturbelassene Jura Mineralwasser – pur, weich und extrem bekömmlich.', 
+                    'price' => 3.20, 
+                    'image_path' => '/images/jura_quelle_naturell.jpg'
+                ],
+
+                // === WEISMAINER PÜLS - TRADITIONELLE LIMONADEN & SCHORLEN ===
+                [
                     'name' => 'Weismainer Püls Orangenlimonade (0,5l)', 
-                    'description' => 'Fruchtig-süße Orangenlimonade mit echtem Fruchtsaftkonzentrat für den vollen Geschmack.', 
+                    'description' => 'Herrlich fruchtige Limonade mit dem saftigen Geschmack sonnengereifter Orangen.', 
                     'price' => 3.60, 
                     'image_path' => '/images/weismainer_orange.jpg'
                 ],
                 [
                     'name' => 'Weismainer Püls Zitronenlimonade (0,5l)', 
-                    'description' => 'Die klassische, glasklare Zitronenlimonade. Spritzig, süß-säuerlich und maximal erfrischend.', 
+                    'description' => 'Der glasklare, spritzige Durstlöscher mit feinsäuerlichem, echtem Zitronenaroma.', 
                     'price' => 3.60, 
                     'image_path' => '/images/weismainer_zitrone.jpg'
                 ],
                 [
-                    'name' => 'Weismainer Püls Apfelschorle (0,5l)', 
-                    'description' => 'Fruchtige Schorle mit hohem Apfelsaftanteil und reinem Jura-Mineralwasser. Ohne Zuckerzusatz.', 
+                    'name' => 'Weismainer Püls Grapefruit-Zitrone (0,5l)', 
+                    'description' => 'Trübe, herbe Erfrischung. Das perfekt ausbalancierte Zusammenspiel aus bitterer Grapefruit und saurer Zitrone.', 
+                    'price' => 3.70, 
+                    'image_path' => '/images/weismainer_grapefruit.jpg'
+                ],
+                [
+                    'name' => 'Abt Knauer Kräuter (0,5l)', 
+                    'description' => 'Die traditionelle Kräuterlimonade nach hauseigener Rezeptur mit feinen Extrakten heimischer Kräuter.', 
+                    'price' => 3.70, 
+                    'image_path' => '/images/abt_knauer_kraeuter.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls Apfelsaftschorle (0,5l)', 
+                    'description' => 'Fruchtig-herbe Direktsaft-Schorle aus knackigen Äpfeln, abgerundet mit nativem Jura Mineralwasser.', 
                     'price' => 3.90, 
                     'image_path' => '/images/weismainer_apfelschorle.jpg'
                 ],
                 [
+                    'name' => 'Weismainer Püls Johannisbeerschorle (0,5l)', 
+                    'description' => 'Tiefrote Fruchtschorle mit dem vollmundigen, säuerlich-herben Geschmack schwarzer Johannisbeeren.', 
+                    'price' => 3.90, 
+                    'image_path' => '/images/weismainer_johannisbeere.jpg'
+                ],
+                [
+                    'name' => 'Weismainer Püls ACE Diät-Punsch (0,5l)', 
+                    'description' => 'Kalorienarmes Mehrfruchtgetränk, reich an den schützenden Vitaminen A, C und E.', 
+                    'price' => 3.80, 
+                    'image_path' => '/images/weismainer_ace.jpg'
+                ],
+                [
                     'name' => 'Weismainer Püls Iso-Sport Fit (0,5l)', 
-                    'description' => 'Isotonisches Erfrischungsgetränk mit Citrus-Geschmack. Kalorienarm und vollgepackt mit wichtigen Vitaminen.', 
+                    'description' => 'Isotonischer Durstlöscher mit spritzigem Citrusgeschmack. Gleicht Mineralstoffverluste schnell wieder aus.', 
                     'price' => 3.80, 
                     'image_path' => '/images/weismainer_isosport.jpg'
                 ],
                 [
+                    'name' => 'Weismainer Püls Fitness-Quelle (0,5l)', 
+                    'description' => 'Das leichte Wellness-Erfrischungsgetränk mit wertvollen Spurenelementen für den aktiven Tag.', 
+                    'price' => 3.70, 
+                    'image_path' => '/images/weismainer_fitness.jpg'
+                ],
+                [
                     'name' => 'Hausgemachter Eistee (0,4l)', 
-                    'description' => 'Liebesbier-Spezialität: Pfirsich-Eistee mit frischer Minze und Zitrone.', 
+                    'description' => 'Hauskreation: Erfrischender Pfirsich-Eistee mit frischen Minzblättern und Zitrone.', 
                     'price' => 4.20, 
                     'image_path' => '/images/eistee.jpg'
                 ],
@@ -401,16 +451,13 @@ class DatabaseSeeder extends Seeder
 
         // 3. Speisekarte intelligent in die Datenbank eintragen
         foreach ($menu as $categoryName => $products) {
-            // Kategorie nur anlegen, wenn der Name noch nicht existiert
             $category = Category::firstOrCreate(['name' => $categoryName]);
 
-            // Produkte zuordnen
             foreach ($products as $productData) {
-                // updateOrCreate sucht nach dem Namen.
-                // Verhindert doppelte Einträge beim wiederholten Ausführen des Seeders.
+                // updateOrCreate stellt sicher, dass geänderte Namen/Beschreibungen überschrieben werden
                 $category->products()->updateOrCreate(
-                    ['name' => $productData['name']], // Suchkriterium
-                    $productData // Daten zum Aktualisieren/Anlegen
+                    ['name' => $productData['name']], 
+                    $productData
                 );
             }
         }
