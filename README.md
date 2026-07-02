@@ -15,30 +15,23 @@ git clone https://github.com/deathjHK/food-delivery-api
 cd food-delivery-api
 ```
 
-2. **Abhängigkeiten installieren:**
+2. **Container starten:**
 ```bash
-docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html laravelsail/php83-composer:latest composer install --ignore-platform-reqs
+./start.sh
 ```
 
-3. **Umgebungsvariablen konfigurieren:**
+3. **Datenbank seeden:**
 ```bash
-cp .env.example .env
-sed -i 's/DB_PASSWORD=/DB_PASSWORD=password/g' .env
+docker compose exec laravel.test php artisan migrate:fresh --seed
 ```
 
-4. **Container starten:**
+4. **Container neustarten:**
 ```bash
-./vendor/bin/sail up -d
-```
-*(Ca. 10 Sekunden warten, bis MySQL vollständig gestartet ist)*
-
-5. **Datenbank & Key einrichten:**
-```bash
-./vendor/bin/sail artisan key:generate
-./vendor/bin/sail artisan migrate:fresh --seed
+docker compose down
+./start.sh
 ```
 
-Die API ist jetzt erreichbar unter: `http://localhost/api/`
+Die API ist jetzt erreichbar unter: `http://localhost:8000/api/`
 
 ## Test-Account
 
@@ -65,7 +58,7 @@ Durch den Seeder existiert folgender Test-Account:
 
 Ausführen der Feature-Tests:
 ```bash
-./vendor/bin/sail artisan test
+docker compose exec laravel.test php artisan test
 ```
 
 ## Architekturmerkmale
