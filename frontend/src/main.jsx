@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ShoppingCart, Search, Star, SlidersHorizontal, Plus, Minus, Trash2, Bike, ShieldCheck, X, User, LogOut, LockKeyhole } from 'lucide-react';
 import './styles.css';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://172.30.7.65/api';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000/api';
 
 const API_ORIGIN = API_BASE.replace(/\/api\/?$/, '');
 
