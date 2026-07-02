@@ -6,10 +6,8 @@ echo -e "\033[0;32m=== Starting Food Delivery System ===\033[0m"
 export WWWGROUP=$(id -g)
 export WWWUSER=$(id -u)
 
-# 1. Create .env if it doesn't exist
-if [ ! -f "backend/.env" ]; then
-    echo "Creating .env file..."
-    cat <<EOF > backend/.env
+echo "Creating .env file..."
+cat <<EOF > backend/.env
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:QkXhkgDXl9uAwD9Vfoo1mMWa7oHc9QTIMLFVqNFS5HU=
@@ -39,9 +37,8 @@ fi
 
 
 # 1. Create .env if it doesn't exist
-if [ ! -f "backend/.env" ]; then
-    echo "Creating .env file..."
-    cat <<EOF > .env
+echo "Creating .env file..."
+cat <<EOF > .env
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:QkXhkgDXl9uAwD9Vfoo1mMWa7oHc9QTIMLFVqNFS5HU=
