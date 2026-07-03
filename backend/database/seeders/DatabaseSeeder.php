@@ -250,65 +250,58 @@ class DatabaseSeeder extends Seeder
 
                 // === WEISMAINER PÜLS - TRADITIONELLE LIMONADEN & SCHORLEN ===
                 [
-                    'name' => 'Weismainer Püls Orangenlimonade (0,5l)', 
-                    'description' => 'Herrlich fruchtige Limonade mit dem saftigen Geschmack sonnengereifter Orangen.', 
+                    'name' => 'Libella Orange Zero (0,5l)', 
+                    'description' => 'Der fruchtige Klassiker mit dem vollen Geschmack sonnengereifter Orangen und wertvollem Vitamin C + E.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_orange.jpg'
+                    'image_path' => '/images/libella-orange.png'
                 ],
                 [
                     'name' => 'Weismainer Püls Zitronenlimonade (0,5l)', 
-                    'description' => 'Der glasklare, spritzige Durstlöscher mit feinsäuerlichem, echtem Zitronenaroma.', 
+                    'description' => 'Fruchtiger Orangenlimonaden-Genuss, komplett zuckerfrei und kalorienarm, angereichert mit Vitamin C + E.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_zitrone.jpg'
+                    'image_path' => '/images/libella-orange-zero.png'
                 ],
                 [
-                    'name' => 'Weismainer Püls Grapefruit-Zitrone (0,5l)', 
-                    'description' => 'Trübe, herbe Erfrischung. Das perfekt ausbalancierte Zusammenspiel aus bitterer Grapefruit und saurer Zitrone.', 
+                    'name' => 'Libella Zitrone (0,5l)', 
+                    'description' => 'Glasklarer, spritziger Durstlöscher mit dem erfrischend-feinsäuerlichen Geschmack von Zitronen und Limetten.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/libella-zitrone.png'
+                ],
+                [
+                    'name' => 'Libella Apfelschorle (0,5l)', 
+                    'description' => 'Fruchtige und naturhemdende Erfrischung mit 55% Fruchtgehalt aus knackigen Äpfeln, ohne zugesetzten Zucker.', 
                     'price' => 3.70, 
-                    'image_path' => '/images/weismainer_grapefruit.jpg'
+                    'image_path' => '/images/libella-grapefruit-zero.png'
                 ],
                 [
-                    'name' => 'Abt Knauer Kräuter (0,5l)', 
-                    'description' => 'Die traditionelle Kräuterlimonade nach hauseigener Rezeptur mit feinen Extrakten heimischer Kräuter.', 
-                    'price' => 3.70, 
-                    'image_path' => '/images/abt_knauer_kraeuter.jpg'
-                ],
-                [
-                    'name' => 'Weismainer Püls Apfelsaftschorle (0,5l)', 
-                    'description' => 'Fruchtig-herbe Direktsaft-Schorle aus knackigen Äpfeln, abgerundet mit nativem Jura Mineralwasser.', 
+                    'name' => 'Libella Fruchtgarten Johannisbeere-Apfel (0,5l)', 
+                    'description' => 'Tiefrotes Fruchtsaftgetränk mit dem intensiv-beerigen Geschmack schwarzer Johannisbeeren, harmonisch abgerundet mit Apfel.', 
                     'price' => 3.90, 
-                    'image_path' => '/images/weismainer_apfelschorle.jpg'
+                    'image_path' => '/images/libella-johannisbeere-apfel.png'
                 ],
                 [
-                    'name' => 'Weismainer Püls Johannisbeerschorle (0,5l)', 
-                    'description' => 'Tiefrote Fruchtschorle mit dem vollmundigen, säuerlich-herben Geschmack schwarzer Johannisbeeren.', 
-                    'price' => 3.90, 
-                    'image_path' => '/images/weismainer_johannisbeere.jpg'
-                ],
-                [
-                    'name' => 'Weismainer Püls ACE Diät-Punsch (0,5l)', 
-                    'description' => 'Kalorienarmes Mehrfruchtgetränk, reich an den schützenden Vitaminen A, C und E.', 
+                    'name' => 'Libella ACE Orange-Karotte (0,5l)', 
+                    'description' => 'Erfrischendes Mehrfrucht-Gemüsegetränk mit 7% Frucht- und 5% Gemüsegehalt. Der perfekte Vitaminkick für den Tag.', 
                     'price' => 3.80, 
-                    'image_path' => '/images/weismainer_ace.jpg'
+                    'image_path' => '/images/libella-ace.png'
                 ],
                 [
-                    'name' => 'Weismainer Püls Iso-Sport Fit (0,5l)', 
-                    'description' => 'Isotonischer Durstlöscher mit spritzigem Citrusgeschmack. Gleicht Mineralstoffverluste schnell wieder aus.', 
+                    'name' => 'Libella Multivitamin (0,5l)', 
+                    'description' => 'Der fruchtige Mix aus ausgewählten Früchten, vollgepackt mit 6 wichtigen Vitaminen und Provitamin A.', 
                     'price' => 3.80, 
-                    'image_path' => '/images/weismainer_isosport.jpg'
+                    'image_path' => '/images/libella-multivitamin.png'
                 ],
                 [
-                    'name' => 'Weismainer Püls Fitness-Quelle (0,5l)', 
-                    'description' => 'Das leichte Wellness-Erfrischungsgetränk mit wertvollen Spurenelementen für den aktiven Tag.', 
+                    'name' => 'Libella Iso-Sport Kirsch (0,5l)', 
+                    'description' => 'Isotonisches Erfrischungsgetränk mit fruchtigem Kirschgeschmack, Magnesium, Calcium und 5 essenziellen Vitaminen.', 
+                    'price' => 3.80, 
+                    'image_path' => '/images/libella-iso-sport-kirsch.png'
+                ],
+                [
+                    'name' => 'Libella Eistee Pfirsich (0,5l)', 
+                    'description' => 'Erfrischendes Teegetränk mit feinem Pfirsichgeschmack und echten Tee-Extrakten für die perfekte Abkühlung.', 
                     'price' => 3.70, 
-                    'image_path' => '/images/weismainer_fitness.jpg'
-                ],
-                [
-                    'name' => 'Hausgemachter Eistee (0,4l)', 
-                    'description' => 'Hauskreation: Erfrischender Pfirsich-Eistee mit frischen Minzblättern und Zitrone.', 
-                    'price' => 4.20, 
-                    'image_path' => '/images/eistee.jpg'
-                ],
+                    'image_path' => '/images/libella-eistee-pfirsich.png'
                 
                 // --- MAISEL'S WEISSE KLASSIKER ---
                 [
