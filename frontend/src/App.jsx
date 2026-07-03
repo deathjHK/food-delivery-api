@@ -148,7 +148,11 @@ export default function App() {
       const token = localStorage.getItem('token');
       const body = {
         items: cart.map((item) => ({ product_id: item.id, quantity: item.quantity })),
-        ...(deliveryAddress ? { delivery_address: deliveryAddress } : {}),
+        ...(deliveryAddress ? { 
+            delivery_street: deliveryAddress.street,
+            delivery_zip: deliveryAddress.zip,
+            delivery_city: deliveryAddress.city
+        } : {}),
       };
       const response = await fetch(`${API_BASE}/checkout`, {
         method: 'POST',

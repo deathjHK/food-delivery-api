@@ -12,7 +12,7 @@ class OrderController extends Controller
 {
     public function checkout(CheckoutRequest $request)
     {
-        return response()->json($request->all());
+        #return response()->json($request->all());
 
         $validatedData = $request->validated();
         $user = auth('sanctum')->user();
