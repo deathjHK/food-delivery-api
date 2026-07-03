@@ -249,7 +249,6 @@ class DatabaseSeeder extends Seeder
                 ],
 
                 // === WEISMAINER PÜLS - TRADITIONELLE LIMONADEN & SCHORLEN ===
-[
     [
         'name' => 'Libella ACE (0,5l)', 
         'description' => 'Der fruchtige Vitaminkick mit den wertvollen Vitaminen A, C und E. Erfrischend und lecker.', 
