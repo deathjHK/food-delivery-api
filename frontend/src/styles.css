@@ -111,3 +111,41 @@ button { cursor: pointer; }
   .filters { position: static; max-height: none; overflow: visible; }
   .hero h1 { letter-spacing: -2px; }
 }
+
+/* Responsive product-card footer: price and button stay aligned without overflowing */
+.productCard { min-width: 0; }
+.cardBody { min-width: 0; }
+.cardFoot {
+  display: grid;
+  grid-template-columns: minmax(76px, max-content) minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.cardFoot strong {
+  min-width: 76px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cardFoot button {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardFoot button svg { flex: 0 0 auto; }
+
+@media (max-width: 560px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
+  .cardFoot {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+  .cardFoot strong {
+    min-width: 0;
+  }
+}
