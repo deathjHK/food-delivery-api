@@ -10,12 +10,15 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // 1. User sicher anlegen
+        // 1. User sicher anlegen (firstOrCreate = Nur anlegen, wenn die E-Mail nicht existiert)
         User::firstOrCreate(
-            ['email' => 'max@example.com'],
+            ['email' => 'max@example.com'], // Suchkriterium
             [
                 'name' => 'Max Mustermann',
                 'password' => bcrypt('geheimesPasswort123'),
+                'delivery_street' => 'Musterstraße 1',
+                'delivery_zip' => '95444',
+                'delivery_city' => 'Bayreuth',
             ]
         );
 
