@@ -20,9 +20,9 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'delivery_street' => $data['delivery_street'],
-            'delivery_zip' => $data['delivery_zip'],
-            'delivery_city' => $data['delivery_city'],
+            'delivery_street' => $data['delivery_street'], // Neu
+            'delivery_zip' => $data['delivery_zip'],       // Neu
+            'delivery_city' => $data['delivery_city'],     // Neu
         ]);
 
         $token = $user->createToken('auth_token')->plainTextToken;

@@ -17,9 +17,10 @@ class RegisterRequest extends FormRequest
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8',
-            'delivery_street' => ['required', 'string', 'min:3', 'max:255', 'regex:/^.+\s+[0-9]+[a-zA-Z]?$/'],
-            'delivery_zip' => ['required', 'regex:/^[0-9]{5}$/'],
-            'delivery_city' => 'required|string|min:2|max:120',
+            // Neue Adressfelder (wir machen sie zwingend erforderlich, da das Frontend sie scheinbar mitschickt)
+            'delivery_street' => 'required|string|max:255',
+            'delivery_zip' => 'required|string|max:20',
+            'delivery_city' => 'required|string|max:255',
         ];
     }
 
