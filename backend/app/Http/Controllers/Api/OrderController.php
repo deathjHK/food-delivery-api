@@ -27,13 +27,16 @@ class OrderController extends Controller
         }
 
         $order = DB::transaction(function () use ($validatedData, $user, $deliveryStreet, $deliveryZip, $deliveryCity) {
+            // 1. Leere Bestellung anlegen (Total Amount berechnen wir gleich)
             $order = Order::create([
-                'user_id' => $user?->id,
+                'user_id' => auth('sanctum')->id(), 
                 'total_amount' => 0,
                 'status' => 'completed',
-                'delivery_street' => $deliveryStreet,
-                'delivery_zip' => $deliveryZip,
-                'delivery_city' => $deliveryCity,
+                
+                // Neue Adressfelder aus dem Request einfügen
+                'delivery_street' => $validatedData['delivery_street'] ?? null,
+                'delivery_zip' => $validatedData['delivery_zip'] ?? null,
+                'delivery_city' => $validatedData['delivery_city'] ?? null,
             ]);
 
             $totalAmount = 0;

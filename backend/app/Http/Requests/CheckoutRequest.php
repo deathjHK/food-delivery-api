@@ -17,10 +17,11 @@ class CheckoutRequest extends FormRequest
             'items' => 'required|array|min:1',
             'items.*.product_id' => 'required|exists:products,id',
             'items.*.quantity' => 'required|integer|min:1|max:50',
-            'delivery_address' => 'nullable|array',
-            'delivery_address.street' => ['nullable', 'required_with:delivery_address', 'string', 'min:3', 'max:255', 'regex:/^.+\s+[0-9]+[a-zA-Z]?$/'],
-            'delivery_address.zip' => ['nullable', 'required_with:delivery_address', 'regex:/^[0-9]{5}$/'],
-            'delivery_address.city' => 'nullable|required_with:delivery_address|string|min:2|max:120',
+            
+            // Neue optionale Adressfelder
+            'delivery_street' => 'nullable|string|max:255',
+            'delivery_zip' => 'nullable|string|max:20',
+            'delivery_city' => 'nullable|string|max:255',
         ];
     }
 
