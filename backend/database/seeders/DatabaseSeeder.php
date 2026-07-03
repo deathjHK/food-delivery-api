@@ -11,11 +11,14 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // 1. User sicher anlegen
-        User::firstOrCreate(
+        User::updateOrCreate(
             ['email' => 'max@example.com'],
             [
                 'name' => 'Max Mustermann',
                 'password' => bcrypt('geheimesPasswort123'),
+                'delivery_street' => 'Musterstraße 12',
+                'delivery_zip' => '95444',
+                'delivery_city' => 'Bayreuth',
             ]
         );
 
@@ -26,19 +29,19 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Liebesbier Frühstücks- & Brunchbuffet', 
                     'description' => 'Großes All-inclusive-Buffet: Frische Smoothies, hausgemachte süße und herzhafte Aufstriche, verschiedene Müslis und Granola, Auswahl an regionaler (veganer) Wurst und Käse, Antipasti, frisches Backhaus-Brot und Croissants. Inklusive Filterkaffee, Wasser und Säften zur Selbstbedienung.', 
                     'price' => 24.90, 
-                    'image_path' => '/images/fruehstueck_buffet.jpg'
+                    'image_path' => '/images/pokebowl.jpg'
                 ],
                 [
                     'name' => 'Upgrade: Zwei Eier (Spiegelei oder Rührei)', 
                     'description' => 'Frisch zubereitete Eier nach Wahl von glücklichen Hühnern aus der Region als perfekte Ergänzung zum Buffet.', 
                     'price' => 4.20, 
-                    'image_path' => '/images/fruehstueck_eier.jpg'
+                    'image_path' => '/images/pokebowl.jpg'
                 ],
                 [
                     'name' => 'Upgrade: Portion krosser Bacon', 
                     'description' => 'Knusprig gebratener Bacon als herzhafter Sidekick.', 
                     'price' => 2.90, 
-                    'image_path' => '/images/fruehstueck_bacon.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
             ],
 
@@ -47,19 +50,19 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Wochen-Mittagsgericht: Kreativ & Fleisch/Fisch', 
                     'description' => 'Unser wöchentlich wechselndes, warmes Mittags-Highlight frisch aus der Marktgrafen-Küche.', 
                     'price' => 11.90, 
-                    'image_path' => '/images/mittags_fleisch.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
                 [
                     'name' => 'Wochen-Mittagsgericht: Best of Veggie / Vegan', 
                     'description' => 'Kreative, leichtere fleischlose Kreation für die perfekte, entspannte Mittagspause.', 
                     'price' => 10.50, 
-                    'image_path' => '/images/mittags_veggie.jpg'
+                    'image_path' => '/images/veggieburger.jpg'
                 ],
                 [
                     'name' => 'Kleiner Mittagssalat', 
                     'description' => 'Knackige saisonale Blattsalate mit Haus-Dressing und gerösteten Kernen.', 
                     'price' => 5.20, 
-                    'image_path' => '/images/mittags_salat.jpg'
+                    'image_path' => '/images/pokebowl.jpg'
                 ],
             ],
 
@@ -68,25 +71,25 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Liebesbier Fritten-Glück', 
                     'description' => 'Knusprige, dicke Pommes frites mit geschmolzenem Cheddar-Käse, krossen Röstzwiebeln und unserer hausgemachten Bacon-Jam.', 
                     'price' => 6.90, 
-                    'image_path' => '/images/fritten_glueck.jpg'
+                    'image_path' => '/images/fish_chips.jpg'
                 ],
                 [
                     'name' => 'Hausgemachter Hummus & gebackene Oliven', 
                     'description' => 'Kichererbsen-Hummus mit nativem Olivenöl, lauwarm gebackenen Riesenoliven und gegrilltem Sauerteigbrot.', 
                     'price' => 7.80, 
-                    'image_path' => '/images/oliven_hummus.jpg'
+                    'image_path' => '/images/pokebowl.jpg'
                 ],
                 [
                     'name' => 'Beef Tatar vom heimischen Weiderind', 
                     'description' => 'Handgeschnittenes, mild gewürztes Rindertatar (100g) mit Kapern, eingelegten Schalotten, Senf-Kaviar und krossem Butter-Toast.', 
                     'price' => 14.20, 
-                    'image_path' => '/images/beef_tatar.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
                 [
                     'name' => 'Pimientos de Padrón', 
                     'description' => 'Gegrillte milde Minipaprika mit grobem Meersalz und Olivenöl, serviert mit Baguette.', 
                     'price' => 6.50, 
-                    'image_path' => '/images/pimientos.jpg'
+                    'image_path' => '/images/pokebowl.jpg'
                 ],
                 [
                     'name' => 'Knoblauchbrot vom Grill', 
@@ -101,19 +104,19 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Urban Art Vegan Bowl', 
                     'description' => 'Nahrhafte Quinoa-Basis mit gebackenem Tofu, Süßkartoffel-Wedges, Granatapfelkernen, wildem Brokkoli und cremigem Erdnuss-Dressing.', 
                     'price' => 13.20, 
-                    'image_path' => '/images/vegan_bowl.jpg'
+                    'image_path' => '/images/pokebowl.jpg'
                 ],
                 [
                     'name' => 'Liebesbier Caesar Salad', 
                     'description' => 'Knackiger Römersalat mit cremigem Caesar-Dressing, krossen Croûtons und gehobeltem Parmesan.', 
                     'price' => 11.50, 
-                    'image_path' => '/images/caesar_salad.jpg'
+                    'image_path' => '/images/pokebowl.jpg'
                 ],
                 [
                     'name' => 'Upgrade zur Bowl/Salat: Gegrillte Hähnchenbrust', 
                     'description' => 'Saftig marinierte Streifen von der Hähnchenbrust frisch vom Grill.', 
                     'price' => 4.90, 
-                    'image_path' => '/images/upgrade_haehnchen.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
             ],
 
@@ -122,7 +125,7 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Der Liebesbier-Burger', 
                     'description' => '180g saftiges Rindfleisch vom regionalen Weiderind, würziger Bergkäse, geschmorte Bier-Zwiebeln, frischer Salat und unsere rauchige Maisel & Friends BBQ-Sauce auf softem Brioche-Bun.', 
                     'price' => 14.50, 
-                    'image_path' => '/images/liebesbier_burger.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
                 [
                     'name' => 'Classic Cheeseburger', 
@@ -140,13 +143,13 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Pulled Pork Craft Burger', 
                     'description' => '12 Stunden slow-cooked Schweineschulter in Pale-Ale-Marinade, mit hausgemachtem knackigen Coleslaw und scharfen Jalapeños.', 
                     'price' => 15.20, 
-                    'image_path' => '/images/pulled_pork.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
                 [
                     'name' => 'Upgrade: Glutenfreies Burger-Brötchen', 
                     'description' => 'Unser Burger-Upgrade aus Reis- und Maismehl für Allergiker.', 
                     'price' => 1.20, 
-                    'image_path' => '/images/upgrade_glutenfrei.jpg'
+                    'image_path' => '/images/cheeseburger.jpg'
                 ],
                 [
                     'name' => 'Upgrade: Zusätzliches Rindfleisch-Patty', 
@@ -161,13 +164,13 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Rumpsteak vom heimischen Weiderind (250g)', 
                     'description' => 'Auf dem Punkt medium gegrillt, serviert mit hausgemachter Kräuterbutter, einer großen Ofenkartoffel und saurem Sauerrahm.', 
                     'price' => 28.90, 
-                    'image_path' => '/images/rumpsteak.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
                 [
                     'name' => 'Gezupftes Schäufele Crossover', 
                     'description' => 'Tradition trifft Moderne: Zart geschmortes, gezupftes Schäufele-Fleisch in kräftiger Dunkelbiersoße auf cremigem Kartoffel-Wirsing-Stampf.', 
                     'price' => 17.90, 
-                    'image_path' => '/images/schaufele.jpg'
+                    'image_path' => '/images/baconburger.jpg'
                 ],
                 [
                     'name' => 'Brauhaus Fish & Chips', 
@@ -182,13 +185,13 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Warmes Schoko-Malz-Törtchen', 
                     'description' => 'Mit flüssigem Schokoladenkern, dunklem Stout-Bier-Spiegel und einer Kugel cremigen Vanilleeis.', 
                     'price' => 7.50, 
-                    'image_path' => '/images/schokotoertchen.jpg'
+                    'image_path' => '/images/maki.jpg'
                 ],
                 [
                     'name' => 'Affogato al Caffè', 
                     'description' => 'Eine Kugel cremiges Vanilleeis „ertränkt“ in einem heißen, kräftigen Espresso.', 
                     'price' => 3.90, 
-                    'image_path' => '/images/affogato.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
             ],
 
@@ -198,31 +201,31 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Weismainer Cola (0,5l)', 
                     'description' => 'Dein Spaßgetränk. Dein Vibe. Der klassische, erfrischende Cola-Genuss mit anregendem Koffein.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_cola.jpg'
+                    'image_path' => '/images/cola.jpg'
                 ],
                 [
                     'name' => 'Weismainer Cola Zero (0,5l)', 
                     'description' => 'Voller Cola-Geschmack, absolut zuckerfrei. Der leichte Vibe ohne Kalorien.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_cola_zero.jpg'
+                    'image_path' => '/images/cola.jpg'
                 ],
                 [
                     'name' => 'Weismainer Mixx (0,5l)', 
                     'description' => 'Die perfekte Kombination aus spritzig-erfrischender Cola und fruchtiger Orangenlimonade.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_mixx.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
                 [
                     'name' => 'Weismainer Mixx Zero (0,5l)', 
                     'description' => 'Der beliebte Cola-Orangen-Mix als zuckerfreie Variante – maximaler Geschmack, null Zucker.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_mixx_zero.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
                 [
                     'name' => 'Weismainer Mate (0,5l)', 
                     'description' => 'Der ultimative, belebende Mate-Kick mit dem typisch herben und rauchigen Aroma.', 
                     'price' => 3.80, 
-                    'image_path' => '/images/weismainer_mate.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
 
                 // === JURA QUELLE MINERALWASSER ===
@@ -230,19 +233,19 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Jura Quelle Sprudel (0,5l)', 
                     'description' => 'Natürliches Mineralwasser aus unberührten, tiefen Gesteinsschichten des Juras. Besonders spritzig mit viel Kohlensäure.', 
                     'price' => 3.20, 
-                    'image_path' => '/images/jura_quelle_sprudel.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
                 [
                     'name' => 'Jura Quelle Medium (0,5l)', 
                     'description' => 'Das reine Jura-Mineralwasser mit harmonisch reduzierter Kohlensäure. Sanft und angenehm zu trinken.', 
                     'price' => 3.20, 
-                    'image_path' => '/images/jura_quelle_medium.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
                 [
                     'name' => 'Jura Quelle Naturell (0,5l)', 
                     'description' => 'Gänzlich ohne Kohlensäure. Das stille, naturbelassene Jura Mineralwasser – pur, weich und extrem bekömmlich.', 
                     'price' => 3.20, 
-                    'image_path' => '/images/jura_quelle_naturell.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
 
                 // === WEISMAINER PÜLS - TRADITIONELLE LIMONADEN & SCHORLEN ===
@@ -250,13 +253,13 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Weismainer Püls Orangenlimonade (0,5l)', 
                     'description' => 'Herrlich fruchtige Limonade mit dem saftigen Geschmack sonnengereifter Orangen.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_orange.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
                 [
                     'name' => 'Weismainer Püls Zitronenlimonade (0,5l)', 
                     'description' => 'Der glasklare, spritzige Durstlöscher mit feinsäuerlichem, echtem Zitronenaroma.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_zitrone.jpg'
+                    'image_path' => '/images/eistee.jpg'
                 ],
                 [
                     'name' => 'Weismainer Püls Grapefruit-Zitrone (0,5l)', 

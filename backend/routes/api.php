@@ -4,12 +4,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\OrderController;
+use App\Http\Controllers\Api\ImageController;
 
 // Checkout Simulation
 Route::post('/checkout', [OrderController::class, 'checkout']);
 
 // Öffentliche Speisekarte
 Route::get('/products', [ProductController::class, 'index']);
+Route::get('/images', [ImageController::class, 'index']);
 
 // Öffentliche Auth-Routen
 Route::post('/register', [AuthController::class, 'register']);

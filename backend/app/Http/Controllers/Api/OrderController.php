@@ -13,46 +13,57 @@ class OrderController extends Controller
     public function checkout(CheckoutRequest $request)
     {
         $validatedData = $request->validated();
-        
-        // Wir nutzen eine Transaktion für Datensicherheit
-        $order = DB::transaction(function () use ($validatedData, $request) {
-            
-            // 1. Leere Bestellung anlegen (Total Amount berechnen wir gleich)
+        $user = auth('sanctum')->user();
+        $customAddress = $validatedData['delivery_address'] ?? null;
+
+        $deliveryStreet = $customAddress['street'] ?? $user?->delivery_street;
+        $deliveryZip = $customAddress['zip'] ?? $user?->delivery_zip;
+        $deliveryCity = $customAddress['city'] ?? $user?->delivery_city;
+
+        if (! $deliveryStreet || ! $deliveryZip || ! $deliveryCity) {
+            return response()->json([
+                'message' => 'Bitte hinterlege eine gültige Lieferadresse.'
+            ], 422);
+        }
+
+        $order = DB::transaction(function () use ($validatedData, $user, $deliveryStreet, $deliveryZip, $deliveryCity) {
             $order = Order::create([
-                // auth('sanctum')->id() gibt die User-ID zurück, falls ein Token mitgeschickt wurde. Sonst null (Gast).
-                'user_id' => auth('sanctum')->id(), 
+                'user_id' => $user?->id,
                 'total_amount' => 0,
-                'status' => 'completed', // Simulation: Bestellung ist direkt abgeschlossen
+                'status' => 'completed',
+                'delivery_street' => $deliveryStreet,
+                'delivery_zip' => $deliveryZip,
+                'delivery_city' => $deliveryCity,
             ]);
 
             $totalAmount = 0;
 
-            // 2. Alle Artikel durchgehen
             foreach ($validatedData['items'] as $item) {
-                $product = Product::find($item['product_id']);
-                
-                // Position in der Zwischentabelle speichern
+                $product = Product::findOrFail($item['product_id']);
+
                 $order->items()->create([
                     'product_id' => $product->id,
                     'quantity' => $item['quantity'],
-                    'price_at_purchase' => $product->price, // Historischen Preis sichern!
+                    'price_at_purchase' => $product->price,
                 ]);
 
-                // Gesamtsumme aufaddieren
                 $totalAmount += ($product->price * $item['quantity']);
             }
 
-            // 3. Gesamtsumme in der Bestellung aktualisieren
             $order->update(['total_amount' => $totalAmount]);
 
             return $order;
         });
 
-        // 4. Erfolgreiche Antwort mit der Bestellnummer ans Frontend schicken
         return response()->json([
             'message' => 'Bestellung erfolgreich durchgeführt!',
             'order_id' => $order->id,
-            'total_amount' => $order->total_amount
+            'total_amount' => $order->total_amount,
+            'delivery_address' => [
+                'street' => $order->delivery_street,
+                'zip' => $order->delivery_zip,
+                'city' => $order->delivery_city,
+            ],
         ], 201);
     }
 }
