@@ -15,10 +15,13 @@ return new class extends Migration
         $table->id();
         $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null');
         $table->decimal('total_amount', 8, 2)->default(0);
-        $table->string('delivery_street');
-        $table->string('delivery_zip', 10);
-        $table->string('delivery_city');
-        $table->string('status')->default('pending'); // pending, completed, cancelled
+        $table->string('status')->default('pending');
+        
+        // WICHTIG: Das ->nullable() erlaubt leere Einträge
+        $table->string('delivery_street')->nullable();
+        $table->string('delivery_zip')->nullable();
+        $table->string('delivery_city')->nullable();
+        
         $table->timestamps();
     });
     }
