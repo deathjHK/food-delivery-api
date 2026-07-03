@@ -302,7 +302,7 @@ class DatabaseSeeder extends Seeder
                     'description' => 'Erfrischendes Teegetränk mit feinem Pfirsichgeschmack und echten Tee-Extrakten für die perfekte Abkühlung.', 
                     'price' => 3.70, 
                     'image_path' => '/images/libella-eistee-pfirsich.png'
-                
+                ]
                 // --- MAISEL'S WEISSE KLASSIKER ---
                 [
                     'name' => 'Maisel\'s Weisse Original (0,5l)', 
