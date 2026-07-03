@@ -44,7 +44,10 @@ button { cursor: pointer; }
 .heroCard button { padding: 12px 18px; color: var(--blue-900); background: white; }
 
 .layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 28px; padding: 34px clamp(16px, 4vw, 64px); }
-.filters { position: sticky; top: 92px; height: max-content; padding: 22px; border-radius: 26px; background: rgba(255,255,255,.92); box-shadow: var(--shadow); }
+.filters { position: sticky; top: 92px; max-height: calc(100vh - 116px); overflow-y: auto; overscroll-behavior: contain; padding: 22px; border-radius: 26px; background: rgba(255,255,255,.92); box-shadow: var(--shadow); scrollbar-width: thin; scrollbar-color: rgba(9,87,164,.45) transparent; }
+.filters::-webkit-scrollbar { width: 8px; }
+.filters::-webkit-scrollbar-track { background: transparent; }
+.filters::-webkit-scrollbar-thumb { border-radius: 999px; background: rgba(9,87,164,.38); }
 .filters h3 { display: flex; align-items: center; gap: 8px; margin-top: 0; }
 .filters label { display: block; margin: 20px 0 10px; color: var(--blue-900); font-size: 13px; font-weight: 950; text-transform: uppercase; }
 .chips { display: flex; flex-direction: column; gap: 8px; }
@@ -53,21 +56,23 @@ button { cursor: pointer; }
 .sectionHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
 .sectionHead h2 { margin: 0; font-size: 36px; }
 .sectionHead p { margin: 5px 0 0; color: var(--muted); }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 22px; }
-.productCard { overflow: hidden; border-radius: 28px; background: white; box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 22px; align-items: stretch; }
+.productCard { display: flex; flex-direction: column; overflow: hidden; min-height: 100%; border-radius: 28px; background: white; box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease; }
 .productCard:hover { transform: translateY(-5px); box-shadow: 0 30px 70px rgba(7, 27, 58, .2); }
 .imageWrap { position: relative; height: 200px; overflow: hidden; background: linear-gradient(135deg, #d8ecff, #fff0c6); }
 .imageWrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .drinkCard .imageWrap img { object-fit: contain; padding: 18px; background: linear-gradient(180deg, #f7fbff, #e9f3ff); }
 .imageWrap span { position: absolute; left: 14px; top: 14px; padding: 7px 11px; border-radius: 999px; color: var(--blue-900); background: rgba(255,255,255,.94); font-size: 12px; font-weight: 950; }
-.cardBody { padding: 18px; }
+.cardBody { display: flex; flex: 1; flex-direction: column; padding: 18px; }
 .rating { display: flex; align-items: center; gap: 5px; color: #d79517; font-weight: 950; }
 .rating small { color: var(--blue-700); }
 .cardBody h3 { min-height: 50px; margin: 10px 0 8px; font-size: 20px; }
-.cardBody p { min-height: 70px; color: var(--muted); line-height: 1.45; }
-.cardFoot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.cardFoot strong { font-size: 22px; }
-.cardFoot button { padding: 11px 14px; color: white; background: linear-gradient(135deg, var(--blue-900), var(--blue-500)); }
+.cardBody p { min-height: 70px; margin-bottom: 18px; color: var(--muted); line-height: 1.45; }
+.cardFoot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 12px; }
+.cardFoot strong { flex: 0 0 auto; min-width: 82px; font-size: 22px; white-space: nowrap; }
+.cardFoot button { flex: 0 0 auto; min-width: 138px; padding: 11px 14px; color: white; background: linear-gradient(135deg, var(--blue-900), var(--blue-500)); box-shadow: 0 12px 24px rgba(9,87,164,.22); transition: transform .18s ease, box-shadow .18s ease, filter .18s ease; }
+.cardFoot button:hover { transform: translateY(-3px); box-shadow: 0 18px 34px rgba(9,87,164,.34); filter: brightness(1.04); }
+.cardFoot button:active { transform: translateY(-1px); }
 
 .drawerBackdrop { position: fixed; inset: 0; z-index: 50; display: flex; justify-content: flex-end; background: rgba(7, 27, 58, .52); backdrop-filter: blur(5px); }
 .drawer { width: min(470px, 100%); height: 100%; padding: 24px; overflow: auto; background: #f3f9ff; box-shadow: -20px 0 60px rgba(0,0,0,.25); }
@@ -103,6 +108,6 @@ button { cursor: pointer; }
   .searchBox { order: 3; flex-basis: 100%; }
   .heroContent, .layout { grid-template-columns: 1fr; }
   .heroCard { display: none; }
-  .filters { position: static; }
+  .filters { position: static; max-height: none; overflow: visible; }
   .hero h1 { letter-spacing: -2px; }
 }
