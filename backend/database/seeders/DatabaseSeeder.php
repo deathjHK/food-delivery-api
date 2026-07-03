@@ -201,31 +201,31 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Weismainer Cola (0,5l)', 
                     'description' => 'Dein Spaßgetränk. Dein Vibe. Der klassische, erfrischende Cola-Genuss mit anregendem Koffein.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_cola.jpg'
+                    'image_path' => '/images/weismainer-erfrischungsgetraenke_cola.png'
                 ],
                 [
                     'name' => 'Weismainer Cola Zero (0,5l)', 
                     'description' => 'Voller Cola-Geschmack, absolut zuckerfrei. Der leichte Vibe ohne Kalorien.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_cola_zero.jpg'
+                    'image_path' => '/images/weismainer-erfrischungsgetraenke_mixx-zero.png'
                 ],
                 [
                     'name' => 'Weismainer Mixx (0,5l)', 
                     'description' => 'Die perfekte Kombination aus spritzig-erfrischender Cola und fruchtiger Orangenlimonade.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_mixx.jpg'
+                    'image_path' => '/images/weismainer-erfrischungsgetraenke_mixx.png'
                 ],
                 [
                     'name' => 'Weismainer Mixx Zero (0,5l)', 
                     'description' => 'Der beliebte Cola-Orangen-Mix als zuckerfreie Variante – maximaler Geschmack, null Zucker.', 
                     'price' => 3.60, 
-                    'image_path' => '/images/weismainer_mixx_zero.jpg'
+                    'image_path' => '/images/weismainer-erfrischungsgetraenke_cola-zero.png'
                 ],
                 [
                     'name' => 'Weismainer Mate (0,5l)', 
                     'description' => 'Der ultimative, belebende Mate-Kick mit dem typisch herben und rauchigen Aroma.', 
                     'price' => 3.80, 
-                    'image_path' => '/images/weismainer_mate.jpg'
+                    'image_path' => '/images/weismainer-erfrischungsgetraenke_mate.png'
                 ],
 
                 // === JURA QUELLE MINERALWASSER ===
@@ -233,19 +233,19 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Jura Quelle Sprudel (0,5l)', 
                     'description' => 'Natürliches Mineralwasser aus unberührten, tiefen Gesteinsschichten des Juras. Besonders spritzig mit viel Kohlensäure.', 
                     'price' => 3.20, 
-                    'image_path' => '/images/jura_quelle_sprudel.jpg'
+                    'image_path' => '/images/Weismainer_Spritzig.png'
                 ],
                 [
                     'name' => 'Jura Quelle Medium (0,5l)', 
                     'description' => 'Das reine Jura-Mineralwasser mit harmonisch reduzierter Kohlensäure. Sanft und angenehm zu trinken.', 
                     'price' => 3.20, 
-                    'image_path' => '/images/jura_quelle_medium.jpg'
+                    'image_path' => '/images/Weismainer_Medium.png'
                 ],
                 [
                     'name' => 'Jura Quelle Naturell (0,5l)', 
                     'description' => 'Gänzlich ohne Kohlensäure. Das stille, naturbelassene Jura Mineralwasser – pur, weich und extrem bekömmlich.', 
                     'price' => 3.20, 
-                    'image_path' => '/images/jura_quelle_naturell.jpg'
+                    'image_path' => '/images/Weismainer_Naturell.png'
                 ],
 
                 // === WEISMAINER PÜLS - TRADITIONELLE LIMONADEN & SCHORLEN ===
@@ -408,34 +408,34 @@ class DatabaseSeeder extends Seeder
 
                 // --- WEISMAINER PÜLS-BRÄU (BIERE) ---
                 [
-                    'name' => 'Weismainer Premium Pils (0,5l)', 
-                    'description' => 'Ein edles, feinherbes Pilsner von bester Qualität. Gebraut mit klarem Jurawasser und feinstem Aromahopfen.', 
+                    'name' => 'Weismainer Vollbier (0,5l)', 
+                    'description' => 'Der klassisch-fränkische Genuss. Ein ehrliches Vollbier mit einer feinen Malznote und goldgelber Farbe.', 
                     'price' => 4.40, 
-                    'image_path' => '/images/weismainer_pils.jpg'
+                    'image_path' => '/images/weismainer-vollbier.png'
                 ],
                 [
-                    'name' => 'Weismainer Feinherb Alkoholfrei (0,5l)', 
-                    'description' => 'Voller Pilsgeschmack, spritzig-herb und komplett alkoholfrei. Die ideale, kalorienarme Erfrischung für Autofahrer.', 
+                    'name' => 'Weismainer Flechterla Alkoholfrei (0,5l)', 
+                    'description' => 'Naturtrüber, bernsteinfarbener Kellerbier-Genuss – komplett alkoholfrei. Die ideale, spritzig-herbe Erfrischung.', 
                     'price' => 4.20, 
-                    'image_path' => '/images/weismainer_alkoholfrei.jpg'
+                    'image_path' => '/images/weismainer-flechterla-alkoholfrei.png'
                 ],
                 [
-                    'name' => 'Weismainer Landbier (0,5l)', 
-                    'description' => 'Ehrliches, fränkisches Landbier nach altüberlieferter Rezeptur. Besonders mild, süffig und harmonisch ausbalanciert.', 
-                    'price' => 4.40, 
-                    'image_path' => '/images/weismainer_landbier.jpg'
-                ],
-                [
-                    'name' => 'Püls-Bräu Flechterla (0,5l)', 
-                    'description' => 'Die legendäre, unfiltrierte Zwickel-Spezialität aus Weismain. Urig, naturbelassen und unbeschreiblich süffig im Geschmack.', 
+                    'name' => 'Püls-Bräu Weismainer Flechterla (0,5l)', 
+                    'description' => 'Die legendäre, naturbelassene Kellerbier-Spezialität aus Weismain. Urig, unfiltriert und unbeschreiblich süffig.', 
                     'price' => 4.60, 
-                    'image_path' => '/images/weismainer_flechterla.jpg'
+                    'image_path' => '/images/weismainer-flechterla.png'
                 ],
                 [
-                    'name' => 'Weismainer Abt Knauer Bier (0,5l)', 
-                    'description' => 'Ein kräftiges, dunkles Festbier zu Ehren der klösterlichen Brautradition. Vollmundig mit ausgeprägten Malzaromen.', 
-                    'price' => 4.70, 
-                    'image_path' => '/images/weismainer_abt_knauer.jpg'
+                    'name' => 'Weismainer NaturRadler (0,5l)', 
+                    'description' => 'Erfrischend und spritzig. Echtes Weismainer Bier kombiniert mit dem Saft reifer Zitronen für den perfekten Durstlöscher.', 
+                    'price' => 4.10, 
+                    'image_path' => '/images/weismainer-naturradler.png'
+                ],
+                [
+                    'name' => 'Weismainer NaturRadler Alkoholfrei (0,5l)', 
+                    'description' => 'Der volle Radler-Geschmack mit natürlicher Zitronenlimonade, aber ganz ohne Alkohol. Kalorienarm und spritzig.', 
+                    'price' => 4.00, 
+                    'image_path' => '/images/weismainer-naturradler-alkoholfrei.png'
                 ],
             ]
         ];
