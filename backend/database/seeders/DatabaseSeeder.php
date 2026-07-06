@@ -249,67 +249,67 @@ class DatabaseSeeder extends Seeder
                 ],
 
                 // === WEISMAINER PÜLS - TRADITIONELLE LIMONADEN & SCHORLEN ===
-    [
-        'name' => 'Libella ACE (0,5l)', 
-        'description' => 'Der fruchtige Vitaminkick mit den wertvollen Vitaminen A, C und E. Erfrischend und lecker.', 
-        'price' => 3.80, 
-        'image_path' => '/images/libella-ace.png'
-    ],
-    [
-        'name' => 'Libella Apfelschorle (0,5l)', 
-        'description' => 'Fruchtige Apfelschorle mit hohem Fruchtsaftanteil. Die perfekte, natürliche Erfrischung ohne zugesetzten Zucker.', 
-        'price' => 3.60, 
-        'image_path' => '/images/libella-apfelschorle.png'
-    ],
-    [
-        'name' => 'Libella Cola (0,5l)', 
-        'description' => 'Der klassische Cola-Geschmack: Aufregend prickelnd, erfrischend und mit der Extraportion Schwung.', 
-        'price' => 3.50, 
-        'image_path' => '/images/libella-cola.png'
-    ],
-    [
-        'name' => 'Libella Cola-Mix (0,5l)', 
-        'description' => 'Die perfekte Kombination aus spritziger Cola und fruchtiger Orange. Der zeitlose Klassiker.', 
-        'price' => 3.60, 
-        'image_path' => '/images/libella-cola_mix.png'
-    ],
-    [
-        'name' => 'Libella Cola-Mix Zero (0,5l)', 
-        'description' => 'Der volle, beliebte Cola-Mix-Geschmack aus Cola und Orange – komplett ohne Zucker und Kalorien.', 
-        'price' => 3.60, 
-        'image_path' => '/images/libella-cola_mix_zero.png'
-    ],
-    [
-        'name' => 'Libella Cola Zero (0,5l)', 
-        'description' => 'Echter, intensiver Cola-Geschmack mit vollem Aroma, aber absolut zuckerfrei.', 
-        'price' => 3.50, 
-        'image_path' => '/images/libella-cola-zero.png'
-    ],
-    [
-        'name' => 'Libella Eistee Pfirsich (0,5l)', 
-        'description' => 'Herrlich erfrischender Eistee mit feinstem Pfirsichgeschmack. Am besten eiskalt genießen.', 
-        'price' => 3.70, 
-        'image_path' => '/images/libella-eistee_pfirsich.png'
-    ],
-    [
-        'name' => 'Libella Fruchtgarten Johannisbeere-Apfel (0,5l)', 
-        'description' => 'Eine harmonische Fruchtsaftkomposition aus herber Johannisbeere und knackigem Apfel.', 
-        'price' => 3.90, 
-        'image_path' => '/images/libella-fruchtgarten-johannisbeere_apfel.png' // Kürzung aus dem Bild logisch ergänzt
-    ],
-    [
-        'name' => 'Libella Grapefruit Zero (0,5l)', 
-        'description' => 'Herbe, spritzige Grapefruit-Erfrischung. Voller Fruchtgeschmack bei null Zucker.', 
-        'price' => 3.60, 
-        'image_path' => '/images/libella-grapfruit_zero.png' // Schreibweise "grapfruit" laut Dateiname übernommen
-    ],
-    [
-        'name' => 'Libella Iso Sport Zitrone-Grapefruit (0,5l)', 
-        'description' => 'Isotonisches Erfrischungsgetränk mit dem Geschmack von Zitrone und Grapefruit. Ideal für Sport und Alltag.', 
-        'price' => 3.80, 
-        'image_path' => '/images/libella-iso_sport-zitrone_grapefruit.png'
-    ],
-    [
+                [
+                    'name' => 'Libella ACE (0,5l)', 
+                    'description' => 'Der fruchtige Vitaminkick mit den wertvollen Vitaminen A, C und E. Erfrischend und lecker.', 
+                    'price' => 3.80, 
+                    'image_path' => '/images/libella-ace.png'
+                ],
+                [
+                    'name' => 'Libella Apfelschorle (0,5l)', 
+                    'description' => 'Fruchtige Apfelschorle mit hohem Fruchtsaftanteil. Die perfekte, natürliche Erfrischung ohne zugesetzten Zucker.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/libella-apfelschorle.png'
+                ],
+                [
+                    'name' => 'Libella Cola (0,5l)', 
+                    'description' => 'Der klassische Cola-Geschmack: Aufregend prickelnd, erfrischend und mit der Extraportion Schwung.', 
+                    'price' => 3.50, 
+                    'image_path' => '/images/libella-cola.png'
+                ],
+                [
+                    'name' => 'Libella Cola-Mix (0,5l)', 
+                    'description' => 'Die perfekte Kombination aus spritziger Cola und fruchtiger Orange. Der zeitlose Klassiker.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/libella-cola_mix.png'
+                ],
+                [
+                    'name' => 'Libella Cola-Mix Zero (0,5l)', 
+                    'description' => 'Der volle, beliebte Cola-Mix-Geschmack aus Cola und Orange – komplett ohne Zucker und Kalorien.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/libella-cola_mix_zero.png'
+                ],
+                [
+                    'name' => 'Libella Cola Zero (0,5l)', 
+                    'description' => 'Echter, intensiver Cola-Geschmack mit vollem Aroma, aber absolut zuckerfrei.', 
+                    'price' => 3.50, 
+                    'image_path' => '/images/libella-cola-zero.png'
+                ],
+                [
+                    'name' => 'Libella Eistee Pfirsich (0,5l)', 
+                    'description' => 'Herrlich erfrischender Eistee mit feinstem Pfirsichgeschmack. Am besten eiskalt genießen.', 
+                    'price' => 3.70, 
+                    'image_path' => '/images/libella-eistee_pfirsich.png'
+                ],
+                [
+                    'name' => 'Libella Fruchtgarten Johannisbeere-Apfel (0,5l)', 
+                    'description' => 'Eine harmonische Fruchtsaftkomposition aus herber Johannisbeere und knackigem Apfel.', 
+                    'price' => 3.90, 
+                    'image_path' => '/images/libella-fruchtgarten-johannisbeere_apfel.png' // Kürzung aus dem Bild logisch ergänzt
+               ],
+               [
+                   'name' => 'Libella Grapefruit Zero (0,5l)', 
+                   'description' => 'Herbe, spritzige Grapefruit-Erfrischung. Voller Fruchtgeschmack bei null Zucker.', 
+                   'price' => 3.60, 
+                   'image_path' => '/images/libella-grapfruit_zero.png' // Schreibweise "grapfruit" laut Dateiname übernommen
+                ],
+                [
+                   'name' => 'Libella Iso Sport Zitrone-Grapefruit (0,5l)', 
+                   'description' => 'Isotonisches Erfrischungsgetränk mit dem Geschmack von Zitrone und Grapefruit. Ideal für Sport und Alltag.', 
+                   'price' => 3.80, 
+                   'image_path' => '/images/libella-iso_sport-zitrone_grapefruit.png'
+                ],
+                [
                    'name' => 'Libella Kirsch (0,5l)', 
                    'description' => 'Fruchtig-süßer Limonadengenuss mit dem vollen, intensiven Aroma roter Kirschen.', 
                    'price' => 3.50, 
