@@ -295,25 +295,25 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Libella Fruchtgarten Johannisbeere-Apfel (0,5l)', 
                     'description' => 'Eine harmonische Fruchtsaftkomposition aus herber Johannisbeere und knackigem Apfel.', 
                     'price' => 3.90, 
-                    'image_path' => '/images/libella-fruchtgarten-johannisbeere_apfel.png' // Kürzung aus dem Bild logisch ergänzt
-               ],
-               [
-                   'name' => 'Libella Grapefruit Zero (0,5l)', 
-                   'description' => 'Herbe, spritzige Grapefruit-Erfrischung. Voller Fruchtgeschmack bei null Zucker.', 
-                   'price' => 3.60, 
-                   'image_path' => '/images/libella-grapfruit_zero.png' // Schreibweise "grapfruit" laut Dateiname übernommen
+                    'image_path' => '/images/libella-fruchtgarten-johannisbeere_apfel.png'
                 ],
                 [
-                   'name' => 'Libella Iso Sport Zitrone-Grapefruit (0,5l)', 
-                   'description' => 'Isotonisches Erfrischungsgetränk mit dem Geschmack von Zitrone und Grapefruit. Ideal für Sport und Alltag.', 
-                   'price' => 3.80, 
-                   'image_path' => '/images/libella-iso_sport-zitrone_grapefruit.png'
+                    'name' => 'Libella Grapefruit Zero (0,5l)', 
+                    'description' => 'Herbe, spritzige Grapefruit-Erfrischung. Voller Fruchtgeschmack bei null Zucker.', 
+                    'price' => 3.60, 
+                    'image_path' => '/images/libella-grapfruit_zero.png'
                 ],
                 [
-                   'name' => 'Libella Kirsch (0,5l)', 
-                   'description' => 'Fruchtig-süßer Limonadengenuss mit dem vollen, intensiven Aroma roter Kirschen.', 
-                   'price' => 3.50, 
-                   'image_path' => '/images/libella-kirsch.png'
+                    'name' => 'Libella Iso Sport Zitrone-Grapefruit (0,5l)', 
+                    'description' => 'Isotonisches Erfrischungsgetränk mit dem Geschmack von Zitrone und Grapefruit. Ideal für Sport und Alltag.', 
+                    'price' => 3.80, 
+                    'image_path' => '/images/libella-iso_sport-zitrone_grapefruit.png'
+                ],
+                [
+                    'name' => 'Libella Kirsch (0,5l)', 
+                    'description' => 'Fruchtig-süßer Limonadengenuss mit dem vollen, intensiven Aroma roter Kirschen.', 
+                    'price' => 3.50, 
+                    'image_path' => '/images/libella-kirsch.png'
                 ],
                 [
                     'name' => 'Libella Multivitamin (0,5l)', 
@@ -338,8 +338,8 @@ class DatabaseSeeder extends Seeder
                     'description' => 'Erfrischend saure und spritzige Zitronenlimonade. Der ultimative Durstlöscher an heißen Tagen.', 
                     'price' => 3.50, 
                     'image_path' => '/images/libella-zitrone.png'
-                ] 
-                
+                ],
+
                 // --- MAISEL'S WEISSE KLASSIKER ---
                 [
                     'name' => 'Maisel\'s Weisse Original (0,5l)', 
@@ -467,7 +467,7 @@ class DatabaseSeeder extends Seeder
                     'price' => 4.00, 
                     'image_path' => '/images/weismainer-naturradler-alkoholfrei.png'
                 ],
-            ]
+            ],
         ];
 
         // 3. Speisekarte intelligent in die Datenbank eintragen
