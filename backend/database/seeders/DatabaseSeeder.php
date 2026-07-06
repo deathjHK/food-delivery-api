@@ -338,8 +338,8 @@ class DatabaseSeeder extends Seeder
                     'description' => 'Erfrischend saure und spritzige Zitronenlimonade. Der ultimative Durstlöscher an heißen Tagen.', 
                     'price' => 3.50, 
                     'image_path' => '/images/libella-zitrone.png'
-                ]
-                ], 
+                ] 
+                
                 // --- MAISEL'S WEISSE KLASSIKER ---
                 [
                     'name' => 'Maisel\'s Weisse Original (0,5l)', 
