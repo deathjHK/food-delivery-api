@@ -29,22 +29,83 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Liebesbier Frühstücks- & Brunchbuffet', 
                     'description' => 'Großes All-inclusive-Buffet: Frische Smoothies, hausgemachte süße und herzhafte Aufstriche, verschiedene Müslis und Granola, Auswahl an regionaler (veganer) Wurst und Käse, Antipasti, frisches Backhaus-Brot und Croissants. Inklusive Filterkaffee, Wasser und Säften zur Selbstbedienung.', 
                     'price' => 24.90, 
-                    'image_path' => '/images/fruehstueck_buffet.jpg'
+                    'image_path' => '/images/Liebesbier-Frühstücks-Brunchbuffet.png'
                 ],
                 [
-                    'name' => 'Upgrade: Zwei Eier (Spiegelei oder Rührei)', 
-                    'description' => 'Frisch zubereitete Eier nach Wahl von glücklichen Hühnern aus der Region als perfekte Ergänzung zum Buffet.', 
-                    'price' => 4.20, 
-                    'image_path' => '/images/fruehstueck_eier.jpg'
+                    'name' => 'Liebesbier Spiegelei', 
+                    'description' => '3 Landeier aus Kasendorf, wahlweise mit körnigem Frischkäse oder Butter, serviert mit frischem Sauerteigbrot.', 
+                    'price' => 9.00, 
+                    'image_path' => '/images/Liebesbier-Spiegelei.png'
                 ],
                 [
-                    'name' => 'Upgrade: Portion krosser Bacon', 
-                    'description' => 'Knusprig gebratener Bacon als herzhafter Sidekick.', 
-                    'price' => 2.90, 
-                    'image_path' => '/images/fruehstueck_bacon.jpg'
+                    'name' => 'Liebesbier Ruehrei', 
+                    'description' => '3 Landeier aus Kasendorf, wahlweise mit körnigem Frischkäse oder Butter, serviert mit frischem Sauerteigbrot.', 
+                    'price' => 9.00, 
+                    'image_path' => '/images/Liebesbier-Ruehrei.png'
+                ],
+                [
+                    'name' => 'Liebesbier LB-Lieblingsbrot', 
+                    'description' => 'Herzhaftes Brot bestrichen mit cremiger Avocadocreme, feinem Pesto und frischer Gartenkresse.', 
+                    'price' => 10.50, 
+                    'image_path' => '/images/Liebesbier-LB-Lieblingsbrot.png'
                 ],
             ],
-
+            'Frühstück & Brunch (extras)' => [    
+                [
+                    'name' => 'Portion Nutella', 
+                    'description' => 'Der süße Klassiker für dein Frühstück.', 
+                    'price' => 2.00, 
+                    'image_path' => '/images/Portion-Nutella.png'
+                ],
+                [
+                    'name' => 'Portion Honig', 
+                    'description' => 'Feiner, süßer Honig.', 
+                    'price' => 2.00, 
+                    'image_path' => '/images/Portion-Honig.png'
+                ],
+                [
+                    'name' => 'Portion Marmelade', 
+                    'description' => 'Fruchtiger Fruchtaufstrich.', 
+                    'price' => 2.00, 
+                    'image_path' => '/images/Portion-Marmelade.png'
+                ],
+                [
+                    'name' => 'Portion Butter', 
+                    'description' => 'Zusätzliche Portion frische Butter.', 
+                    'price' => 2.00, 
+                    'image_path' => '/images/Portion-Butter.png'
+                ],
+                [
+                    'name' => 'Extra Brötchen', 
+                    'description' => 'Ein klassisches, ofenfrisches Weizenbrötchen.', 
+                    'price' => 1.00, 
+                    'image_path' => '/images/Extra-Broetchen.png'
+                ],
+                [
+                    'name' => 'Extra Körnerbrötchen', 
+                    'description' => 'Frisches, ballaststoffreiches Körnerbrötchen.', 
+                    'price' => 1.50, 
+                    'image_path' => '/images/Extra-Koernerbroetchen.png'
+                ],
+                [
+                    'name' => 'Croissant', 
+                    'description' => 'Fluffig-blätteriges Buttercroissant.', 
+                    'price' => 2.50, 
+                    'image_path' => '/images/Croissant.png'
+                ],
+                [
+                    'name' => 'Obstsalat', 
+                    'description' => 'Frisch geschnittene, saisonale Früchte im Becher.', 
+                    'price' => 6.90, 
+                    'image_path' => '/images/Obstsalat.png'
+                ],
+                [
+                    'name' => 'Obstsalat mit Joghurt', 
+                    'description' => 'Frische, saisonale Früchte auf cremigem Naturjoghurt.', 
+                    'price' => 7.50, 
+                    'image_path' => '/images/Obstsalat-mit-Joghurt.png'
+                ],
+            ],
             'Mittagstisch (11:30 - 17:00 Uhr)' => [
                 [
                     'name' => 'Wochen-Mittagsgericht: Kreativ & Fleisch/Fisch', 
