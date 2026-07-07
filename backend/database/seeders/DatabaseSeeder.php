@@ -219,7 +219,7 @@ class DatabaseSeeder extends Seeder
                     'price' => 16.00, 
                     'image_path' => '/images/Jeffs-Burger.png'
                 ],
-            ]    
+            ],    
             'Mittagstisch (BEILAGEN & SAUCEN)' => [
                 // --- BEILAGEN & SAUCEN ---
                 [
@@ -306,7 +306,7 @@ class DatabaseSeeder extends Seeder
                     'price' => 3.00, 
                     'image_path' => '/images/Pfeffersauce.png'
                 ],
-            ]   
+            ],   
             'Mittagstisch (NACHSPEISE)' => [            
                 // --- NACHSPEISE ---
                 [
@@ -398,7 +398,7 @@ class DatabaseSeeder extends Seeder
                     'price' => 8.50, 
                     'image_path' => '/images/Hopfenschinken.png'
                 ],
-            ]    
+            ],    
             'Abendkarte (HAUPTSPEISEN)' => [
                 // --- HAUPTSPEISEN ---
                 [
@@ -515,7 +515,7 @@ class DatabaseSeeder extends Seeder
                     'price' => 29.00, 
                     'image_path' => '/images/Beef-Brisket.png'
                 ],
-            ]    
+            ],    
             'Abendkarte (BEILAGEN)' => [
                 // --- BEILAGEN & SAUCEN ---
                 [
@@ -566,7 +566,7 @@ class DatabaseSeeder extends Seeder
                     'price' => 2.50, 
                     'image_path' => '/images/Saucen.png'
                 ],
-            ]
+            ],
             'Abendkarte (BNACHSPEISEN)' => [
                 // --- NACHSPEISEN ---
                 [
