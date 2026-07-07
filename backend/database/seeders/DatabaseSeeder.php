@@ -79,13 +79,13 @@ class DatabaseSeeder extends Seeder
                     'name' => 'Extra Brötchen', 
                     'description' => 'Ein klassisches, ofenfrisches Weizenbrötchen.', 
                     'price' => 1.00, 
-                    'image_path' => '/images/Extra-Broetchen.png'
+                    'image_path' => '/images/Brötchen.png'
                 ],
                 [
                     'name' => 'Extra Körnerbrötchen', 
                     'description' => 'Frisches, ballaststoffreiches Körnerbrötchen.', 
                     'price' => 1.50, 
-                    'image_path' => '/images/Extra-Koernerbroetchen.png'
+                    'image_path' => '/images/Körnerbrötchen.png'
                 ],
                 [
                     'name' => 'Croissant', 
