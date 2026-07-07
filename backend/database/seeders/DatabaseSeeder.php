@@ -107,7 +107,6 @@ class DatabaseSeeder extends Seeder
                 ],
             ],
             'Mittagstisch (Vorspeisen)' => [
-                // --- Vorspeisen ---
                 [
                     'name' => 'Kross gebackenes Steinmühlbrot',
                     'description' => 'Ofenfrisches, kross gebackenes Brot aus der regionalen Steinmühle.',
@@ -127,8 +126,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/Klare-Blumenkohlsuppe.png'
                 ],
             ],
-            'Mittagstisch (HAUPTSPEISEN)' => [
-                // --- HAUPTSPEISEN ---
+            'Mittagstisch (Hauptspeisen)' => [
                 [
                     'name' => 'Pastrami Sandwich', 
                     'description' => 'Gerösteter Brioche mit saftigem Pastrami, Spitzkohlrahmsalat, Senfkaviar, Meerrettich, Hausfritten und Darkbeer-BBQ-Sauce. [Allergene: a) a.1) a.3) c) f) g) m)]', 
@@ -220,8 +218,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/Jeffs-Burger.png'
                 ],
             ],    
-            'Mittagstisch (BEILAGEN & SAUCEN)' => [
-                // --- BEILAGEN & SAUCEN ---
+            'Mittagstisch (Beilagen)' => [
                 [
                     'name' => 'Brotkorb (1 Person)', 
                     'description' => 'Frische Brotauswahl als Beilage für eine Person.', 
@@ -307,8 +304,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/Pfeffersauce.png'
                 ],
             ],   
-            'Mittagstisch (NACHSPEISE)' => [            
-                // --- NACHSPEISE ---
+            'Mittagstisch (Nachspeisen)' => [            
                 [
                     'name' => 'Hausgemachtes Eis', 
                     'description' => 'Täglich frisch zubereitete Eiskreationen aus unserer eigenen Herstellung.', 
@@ -342,8 +338,7 @@ class DatabaseSeeder extends Seeder
              * Alle Preise enthalten die gesetzlich vorgeschriebene MwSt.
              */
 
-            'Abendkarte (VORSPEISEN)' => [
-                // --- VORSPEISEN & STARTERS ---
+            'Abendkarte (Vorspeisen)' => [
                 [
                     'name' => 'Kohlrabi Carpaccio', 
                     'description' => 'Mit Senfgurke, Johannisbeere und Haselnüssen. [Allergene: h.2) m)]', 
@@ -399,8 +394,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/Hopfenschinken.png'
                 ],
             ],    
-            'Abendkarte (HAUPTSPEISEN)' => [
-                // --- HAUPTSPEISEN ---
+            'Abendkarte (Hauptspeisen)' => [
                 [
                     'name' => 'Hausgemachte Bandnudeln', 
                     'description' => 'Pfifferlinge, Bohnen, Aprikosen-Miso-Rahmsauce und Haselnüsse. [Allergene: a) a.1) c) f) g) h.2) l)]', 
@@ -516,8 +510,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/Beef-Brisket.png'
                 ],
             ],    
-            'Abendkarte (BEILAGEN)' => [
-                // --- BEILAGEN & SAUCEN ---
+            'Abendkarte (Beilagen)' => [
                 [
                     'name' => 'Brotkorb', 
                     'description' => 'Frische Brotauswahl (1 oder 2 Personen).', 
@@ -567,8 +560,7 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/Saucen.png'
                 ],
             ],
-            'Abendkarte (BNACHSPEISEN)' => [
-                // --- NACHSPEISEN ---
+            'Abendkarte (Nachspeisen)' => [
                 [
                     'name' => 'Hausgemachtes Eis', 
                     'description' => 'Täglich frisch zubereitete Eiskreationen.', 
