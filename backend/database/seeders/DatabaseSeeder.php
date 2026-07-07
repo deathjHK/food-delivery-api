@@ -106,47 +106,28 @@ class DatabaseSeeder extends Seeder
                     'image_path' => '/images/Obstsalat-mit-Joghurt.png'
                 ],
             ],
-            'Mittagstisch (11:30 - 17:00 Uhr)' => [
-                // --- WOCHENGERICHTE & SALAT ---
+            'Mittagstisch (Vorspeisen)' => [
+                // --- Vorspeisen ---
                 [
-                    'name' => 'Wochen-Mittagsgericht: Kreativ & Fleisch/Fisch', 
-                    'description' => 'Unser wöchentlich wechselndes, warmes Mittags-Highlight frisch aus der Marktgrafen-Küche.', 
-                    'price' => 11.90, 
-                    'image_path' => '/images/Wochen-Mittagsgericht-Kreativ-Fleisch-Fisch.png'
-                ],
-                [
-                    'name' => 'Wochen-Mittagsgericht: Best of Veggie / Vegan', 
-                    'description' => 'Kreative, leichtere fleischlose Kreation für die perfekte, entspannte Mittagspause.', 
-                    'price' => 10.50, 
-                    'image_path' => '/images/Wochen-Mittagsgericht-Best-of-Veggie-Vegan.png'
-                ],
-                [
-                    'name' => 'Kleiner Mittagssalat', 
-                    'description' => 'Knackige saisonale Blattsalate mit Haus-Dressing und gerösteten Kernen.', 
-                    'price' => 5.20, 
-                    'image_path' => '/images/Kleiner-Mittagssalat.png'
-                ],
-
-                // --- VORSPEISEN ---
-                [
-                    'name' => 'Vorspeise: Kross gebackenes Steinmühlbrot', 
-                    'description' => 'Ofenfrisches, kross gebackenes Brot aus der regionalen Steinmühle.', 
-                    'price' => 4.50, 
+                    'name' => 'Kross gebackenes Steinmühlbrot',
+                    'description' => 'Ofenfrisches, kross gebackenes Brot aus der regionalen Steinmühle.',
+                    'price' => 4.50,
                     'image_path' => '/images/Kross-gebackenes-Steinmuehlbrot.png'
                 ],
                 [
-                    'name' => 'Ziegenkäsemousse', 
-                    'description' => 'Laugengebäck serviert mit cremigem Ziegenfrischkäse, aromatischen Pfifferlingen, Erdbeere, Sauerampfer und jungem Pflücksalat. [Allergene: a) a.1) c) g) l)]', 
-                    'price' => 13.50, 
+                    'name' => 'Ziegenkäsemousse',
+                    'description' => 'Ziegenfrischkäse, Pfifferlinge, Erdbeere, Sauerampfer und Pflücksalat. [Allergene: a) a.1) c) g) l)]',
+                    'price' => 13.50,
                     'image_path' => '/images/Ziegenkaesemousse.png'
                 ],
                 [
-                    'name' => 'Klare Blumenkohlsuppe', 
-                    'description' => 'Feine, klare Suppe mit Grießnockerln mit würzigem Käse, Pfifferlingen und Tomate. [Allergene: a) a.1) c) f) g)]', 
-                    'price' => 8.00, 
+                    'name' => 'Klare Blumenkohlsuppe',
+                    'description' => 'Feine Suppe mit Grießnockerln, Käse, Pfifferlingen und Tomate. [Allergene: a) a.1) c) f) g)]',
+                    'price' => 8.00,
                     'image_path' => '/images/Klare-Blumenkohlsuppe.png'
                 ],
-
+            ],
+            'Mittagstisch (HAUPTSPEISEN)' => [
                 // --- HAUPTSPEISEN ---
                 [
                     'name' => 'Pastrami Sandwich', 
@@ -238,7 +219,8 @@ class DatabaseSeeder extends Seeder
                     'price' => 16.00, 
                     'image_path' => '/images/Jeffs-Burger.png'
                 ],
-
+            ]    
+            'Mittagstisch (BEILAGEN & SAUCEN)' => [
                 // --- BEILAGEN & SAUCEN ---
                 [
                     'name' => 'Brotkorb (1 Person)', 
@@ -324,7 +306,8 @@ class DatabaseSeeder extends Seeder
                     'price' => 3.00, 
                     'image_path' => '/images/Pfeffersauce.png'
                 ],
-
+            ]   
+            'Mittagstisch (NACHSPEISE)' => [            
                 // --- NACHSPEISE ---
                 [
                     'name' => 'Hausgemachtes Eis', 
@@ -359,7 +342,7 @@ class DatabaseSeeder extends Seeder
              * Alle Preise enthalten die gesetzlich vorgeschriebene MwSt.
              */
 
-            'Abendkarte (ab 17:00 Uhr)' => [
+            'Abendkarte (VORSPEISEN)' => [
                 // --- VORSPEISEN & STARTERS ---
                 [
                     'name' => 'Kohlrabi Carpaccio', 
@@ -415,7 +398,8 @@ class DatabaseSeeder extends Seeder
                     'price' => 8.50, 
                     'image_path' => '/images/Hopfenschinken.png'
                 ],
-
+            ]    
+            'Abendkarte (HAUPTSPEISEN)' => [
                 // --- HAUPTSPEISEN ---
                 [
                     'name' => 'Hausgemachte Bandnudeln', 
@@ -531,7 +515,8 @@ class DatabaseSeeder extends Seeder
                     'price' => 29.00, 
                     'image_path' => '/images/Beef-Brisket.png'
                 ],
-
+            ]    
+            'Abendkarte (BEILAGEN)' => [
                 // --- BEILAGEN & SAUCEN ---
                 [
                     'name' => 'Brotkorb', 
@@ -581,7 +566,8 @@ class DatabaseSeeder extends Seeder
                     'price' => 2.50, 
                     'image_path' => '/images/Saucen.png'
                 ],
-
+            ]
+            'Abendkarte (BNACHSPEISEN)' => [
                 // --- NACHSPEISEN ---
                 [
                     'name' => 'Hausgemachtes Eis', 
