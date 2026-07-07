@@ -107,154 +107,516 @@ class DatabaseSeeder extends Seeder
                 ],
             ],
             'Mittagstisch (11:30 - 17:00 Uhr)' => [
+                // --- WOCHENGERICHTE & SALAT ---
                 [
                     'name' => 'Wochen-Mittagsgericht: Kreativ & Fleisch/Fisch', 
                     'description' => 'Unser wöchentlich wechselndes, warmes Mittags-Highlight frisch aus der Marktgrafen-Küche.', 
                     'price' => 11.90, 
-                    'image_path' => '/images/mittags_fleisch.jpg'
+                    'image_path' => '/images/Wochen-Mittagsgericht-Kreativ-Fleisch-Fisch.png'
                 ],
                 [
                     'name' => 'Wochen-Mittagsgericht: Best of Veggie / Vegan', 
                     'description' => 'Kreative, leichtere fleischlose Kreation für die perfekte, entspannte Mittagspause.', 
                     'price' => 10.50, 
-                    'image_path' => '/images/mittags_veggie.jpg'
+                    'image_path' => '/images/Wochen-Mittagsgericht-Best-of-Veggie-Vegan.png'
                 ],
                 [
                     'name' => 'Kleiner Mittagssalat', 
                     'description' => 'Knackige saisonale Blattsalate mit Haus-Dressing und gerösteten Kernen.', 
                     'price' => 5.20, 
-                    'image_path' => '/images/mittags_salat.jpg'
+                    'image_path' => '/images/Kleiner-Mittagssalat.png'
                 ],
-            ],
 
-            'Abendkarte - Bierbegleiter & Vorspeisen' => [
+                // --- VORSPEISEN ---
                 [
-                    'name' => 'Liebesbier Fritten-Glück', 
-                    'description' => 'Knusprige, dicke Pommes frites mit geschmolzenem Cheddar-Käse, krossen Röstzwiebeln und unserer hausgemachten Bacon-Jam.', 
-                    'price' => 6.90, 
-                    'image_path' => '/images/fritten_glueck.jpg'
+                    'name' => 'Vorspeise: Kross gebackenes Steinmühlbrot', 
+                    'description' => 'Ofenfrisches, kross gebackenes Brot aus der regionalen Steinmühle.', 
+                    'price' => 4.50, 
+                    'image_path' => '/images/Kross-gebackenes-Steinmuehlbrot.png'
                 ],
                 [
-                    'name' => 'Hausgemachter Hummus & gebackene Oliven', 
-                    'description' => 'Kichererbsen-Hummus mit nativem Olivenöl, lauwarm gebackenen Riesenoliven und gegrilltem Sauerteigbrot.', 
-                    'price' => 7.80, 
-                    'image_path' => '/images/oliven_hummus.jpg'
+                    'name' => 'Ziegenkäsemousse', 
+                    'description' => 'Laugengebäck serviert mit cremigem Ziegenfrischkäse, aromatischen Pfifferlingen, Erdbeere, Sauerampfer und jungem Pflücksalat. [Allergene: a) a.1) c) g) l)]', 
+                    'price' => 13.50, 
+                    'image_path' => '/images/Ziegenkaesemousse.png'
                 ],
                 [
-                    'name' => 'Beef Tatar vom heimischen Weiderind', 
-                    'description' => 'Handgeschnittenes, mild gewürztes Rindertatar (100g) mit Kapern, eingelegten Schalotten, Senf-Kaviar und krossem Butter-Toast.', 
-                    'price' => 14.20, 
-                    'image_path' => '/images/beef_tatar.jpg'
+                    'name' => 'Klare Blumenkohlsuppe', 
+                    'description' => 'Feine, klare Suppe mit Grießnockerln mit würzigem Käse, Pfifferlingen und Tomate. [Allergene: a) a.1) c) f) g)]', 
+                    'price' => 8.00, 
+                    'image_path' => '/images/Klare-Blumenkohlsuppe.png'
                 ],
-                [
-                    'name' => 'Pimientos de Padrón', 
-                    'description' => 'Gegrillte milde Minipaprika mit grobem Meersalz und Olivenöl, serviert mit Baguette.', 
-                    'price' => 6.50, 
-                    'image_path' => '/images/pimientos.jpg'
-                ],
-                [
-                    'name' => 'Knoblauchbrot vom Grill', 
-                    'description' => 'Geröstetes Sauerteigbrot mit hausgemachter Knoblauch-Kräuterbutter und Meersalz.', 
-                    'price' => 4.80, 
-                    'image_path' => '/images/knoblauchbrot.jpg'
-                ],
-            ],
 
-            'Abendkarte - Salate & Bowls' => [
+                // --- HAUPTSPEISEN ---
                 [
-                    'name' => 'Urban Art Vegan Bowl', 
-                    'description' => 'Nahrhafte Quinoa-Basis mit gebackenem Tofu, Süßkartoffel-Wedges, Granatapfelkernen, wildem Brokkoli und cremigem Erdnuss-Dressing.', 
-                    'price' => 13.20, 
-                    'image_path' => '/images/vegan_bowl.jpg'
+                    'name' => 'Pastrami Sandwich', 
+                    'description' => 'Gerösteter Brioche mit saftigem Pastrami, Spitzkohlrahmsalat, Senfkaviar, Meerrettich, Hausfritten und Darkbeer-BBQ-Sauce. [Allergene: a) a.1) a.3) c) f) g) m)]', 
+                    'price' => 16.00, 
+                    'image_path' => '/images/Pastrami-Sandwich.png'
                 ],
                 [
-                    'name' => 'Liebesbier Caesar Salad', 
-                    'description' => 'Knackiger Römersalat mit cremigem Caesar-Dressing, krossen Croûtons und gehobeltem Parmesan.', 
-                    'price' => 11.50, 
-                    'image_path' => '/images/caesar_salad.jpg'
+                    'name' => 'Überbackener Baggers', 
+                    'description' => 'Fränkische Kartoffelpuffer mit Spinat, Pfifferlingen, überbacken mit gereiftem Oberpfälzer Käse an Gemüsejus. [Allergene: a) a.1) c) f) g) l)]', 
+                    'price' => 18.00, 
+                    'image_path' => '/images/Ueberbackener-Baggers.png'
                 ],
                 [
-                    'name' => 'Upgrade zur Bowl/Salat: Gegrillte Hähnchenbrust', 
-                    'description' => 'Saftig marinierte Streifen von der Hähnchenbrust frisch vom Grill.', 
-                    'price' => 4.90, 
-                    'image_path' => '/images/upgrade_haehnchen.jpg'
-                ],
-            ],
-
-            'Abendkarte - Verrückte Burger' => [
-                [
-                    'name' => 'Der Liebesbier-Burger', 
-                    'description' => '180g saftiges Rindfleisch vom regionalen Weiderind, würziger Bergkäse, geschmorte Bier-Zwiebeln, frischer Salat und unsere rauchige Maisel & Friends BBQ-Sauce auf softem Brioche-Bun.', 
-                    'price' => 14.50, 
-                    'image_path' => '/images/liebesbier_burger.jpg'
+                    'name' => 'Hausgemachte Kartoffelnocken', 
+                    'description' => 'Frische Kartoffelnocken mit gebratenen Pfifferlingen, Tomate und cremigem Bergkäsefond. [Allergene: a) a.1) c) g) l)]', 
+                    'price' => 18.00, 
+                    'image_path' => '/images/Hausgemachte-Kartoffelnocken.png'
                 ],
                 [
-                    'name' => 'Classic Cheeseburger', 
-                    'description' => '180g heimisches Weiderind mit geschmolzenem Cheddar, knackigem Salat, Tomate, Gurke und unserer geheimen Haus-Sauce.', 
-                    'price' => 12.90, 
-                    'image_path' => '/images/cheeseburger.jpg'
+                    'name' => 'Hausgemachte Bandnudeln', 
+                    'description' => 'Feine Bandnudeln mit Pfifferlingen, Bohnen und Haselnüssen in einer außergewöhnlichen Aprikosen-Miso-Rahmsauce. [Allergene: a) a.1) c) f) g) h.2) l)]', 
+                    'price' => 19.00, 
+                    'image_path' => '/images/Hausgemachte-Bandnudeln.png'
                 ],
                 [
-                    'name' => 'Veggie Falafel Burger', 
-                    'description' => 'Hausgemachtes, krosses Falafel-Patty mit cremigem Hummus, Gurken-Relish und veganer Zitronen-Mayonnaise.', 
-                    'price' => 11.20, 
-                    'image_path' => '/images/veggieburger.jpg'
+                    'name' => '„Montreal Maple“ Bratwurst', 
+                    'description' => 'Gewinnerbratwurst vom 13. Fränkischen Bratwurstgipfel! Kreativbratwurst mit Bratensoße, Käse und Ahornsirup, serviert mit Spitzkohlrahmsalat, Röstzwiebelpüree und Ahornsirup-Bratensauce.', 
+                    'price' => 15.90, 
+                    'image_path' => '/images/Montreal-Maple-Bratwurst.png'
                 ],
                 [
-                    'name' => 'Pulled Pork Craft Burger', 
-                    'description' => '12 Stunden slow-cooked Schweineschulter in Pale-Ale-Marinade, mit hausgemachtem knackigen Coleslaw und scharfen Jalapeños.', 
-                    'price' => 15.20, 
-                    'image_path' => '/images/pulled_pork.jpg'
-                ],
-                [
-                    'name' => 'Upgrade: Glutenfreies Burger-Brötchen', 
-                    'description' => 'Unser Burger-Upgrade aus Reis- und Maismehl für Allergiker.', 
-                    'price' => 1.20, 
-                    'image_path' => '/images/upgrade_glutenfrei.jpg'
-                ],
-                [
-                    'name' => 'Upgrade: Zusätzliches Rindfleisch-Patty', 
-                    'description' => 'Noch hungrig? Wir packen dir ein zweites 180g Weiderind-Patty auf deinen Burger.', 
-                    'price' => 6.90, 
-                    'image_path' => '/images/upgrade_patty.jpg'
-                ],
-            ],
-
-            'Abendkarte - Steaks & Hauptgerichte' => [
-                [
-                    'name' => 'Rumpsteak vom heimischen Weiderind (250g)', 
-                    'description' => 'Auf dem Punkt medium gegrillt, serviert mit hausgemachter Kräuterbutter, einer großen Ofenkartoffel und saurem Sauerrahm.', 
-                    'price' => 28.90, 
-                    'image_path' => '/images/rumpsteak.jpg'
-                ],
-                [
-                    'name' => 'Gezupftes Schäufele Crossover', 
-                    'description' => 'Tradition trifft Moderne: Zart geschmortes, gezupftes Schäufele-Fleisch in kräftiger Dunkelbiersoße auf cremigem Kartoffel-Wirsing-Stampf.', 
-                    'price' => 17.90, 
-                    'image_path' => '/images/schaufele.jpg'
-                ],
-                [
-                    'name' => 'Brauhaus Fish & Chips', 
-                    'description' => 'Kabeljaufilet im knusprig-luftigen Bierteig aus Maisel\'s Weisse, serviert mit Erbsenpüree, dicken Pommes und Remoulade.', 
+                    'name' => 'Crispy Chickenburger', 
+                    'description' => 'Knuspriges Hähnchen im Briochebun mit Kirschchutney, Pfefferschmand, herzhaftem Bacon, Romanasalat und Tomate. [Allergene: a) a.1) c) f) g) o)]', 
                     'price' => 16.50, 
-                    'image_path' => '/images/fish_chips.jpg'
+                    'image_path' => '/images/Crispy-Chickenburger.png'
+                ],
+                [
+                    'name' => 'Bunte Salatbowl', 
+                    'description' => 'Knackige Blattsalate der Saison mit Gerstensalat, Rotkohl, Radieschen, Karotte, Tomate, Gurke, Croutons und gerösteten Kürbis- & Sonnenblumenkernen. [Allergene: a) l) m) o)]', 
+                    'price' => 12.00, 
+                    'image_path' => '/images/Bunte-Salatbowl.png'
+                ],
+                [
+                    'name' => 'Königsberger Klopse', 
+                    'description' => 'Klassische Klopse serviert mit knackigem Gemüse, Kartoffelpüree, feiner Kapernsauce und Gemüsechips. [Allergene: a) f) m)]', 
+                    'price' => 18.50, 
+                    'image_path' => '/images/Koenigsberger-Klopse.png'
+                ],
+                [
+                    'name' => 'Fränkische Fish & Chips', 
+                    'description' => 'Fischfilet im luftigen Bierteig knusprig ausgebacken, serviert mit gezupftem Baggers, cremigem Kräuter-Ziebeleskäs und gepickelten Zwiebeln. [Allergene: a) a.1) c) d) g) o)]', 
+                    'price' => 24.00, 
+                    'image_path' => '/images/Fraenkisch-Fish-Chips.png'
+                ],
+                [
+                    'name' => 'Gezupftes Schäufele', 
+                    'description' => 'Langzeit gegarte Schulter vom fränkischen Stroh-Schwein mit gebackenem Knödel, Krautsalat, kräftiger Bierjus, Schnittlauch und knusprigem Schwartenpopcorn.', 
+                    'price' => 19.00, 
+                    'image_path' => '/images/Gezupftes-Schaeufele.png'
+                ],
+                [
+                    'name' => 'Brezenschnitzel', 
+                    'description' => 'Mariniertes Bierschnitzel vom fränkischen Stroh-Schwein in einer Panade aus Brezenbröseln, serviert mit klassischem Kartoffel-Radieschensalat und Frühlingslauch.', 
+                    'price' => 21.00, 
+                    'image_path' => '/images/Brezenschnitzel.png'
+                ],
+                [
+                    'name' => 'Steak Frites', 
+                    'description' => 'Gegrilltes Hüftsteak dünn aufgeschnitten mit würziger Zwiebeljus, Hausfritten, Schmortomate, Chipotlemayo, Röstzwiebeln und Frühlingslauch. [Allergene: a) l) o)]', 
+                    'price' => 29.00, 
+                    'image_path' => '/images/Steak-Frites.png'
+                ],
+                [
+                    'name' => 'LB-Spareribs', 
+                    'description' => 'Langzeit gegarte, butterzarte Baby Back Ribs vom fränkischen Landschwein (ca. 400g) glasiert mit unserer Darkbeer-BBQ-Sauce. [Allergene: a) h.1)]', 
+                    'price' => 17.00, 
+                    'image_path' => '/images/LB-Spareribs.png'
+                ],
+                [
+                    'name' => 'LB-Burger', 
+                    'description' => '100% Frankenbeef (medium gebraten) im Briochebun mit hausgemachter Bacon-Jam, würzigem Käse, Tomate, eingelegten Biergurken, Zwiebeln, frischem Salat und rauchiger Darkbeer-BBQ-Sauce. [Allergene: a) g) o)]', 
+                    'price' => 16.00, 
+                    'image_path' => '/images/LB-Burger.png'
+                ],
+                [
+                    'name' => 'Jeffs-Burger', 
+                    'description' => 'Die pflanzliche Alternative mit Beyond Burger Patty im Sesam Bun, Cheddar Style Veggie-Käse, Tomate, eingelegten Biergurken, Salat, Zwiebeln und Darkbeer-BBQ-Sauce. [Allergene: a) g) o)]', 
+                    'price' => 16.00, 
+                    'image_path' => '/images/Jeffs-Burger.png'
+                ],
+
+                // --- BEILAGEN & SAUCEN ---
+                [
+                    'name' => 'Brotkorb (1 Person)', 
+                    'description' => 'Frische Brotauswahl als Beilage für eine Person.', 
+                    'price' => 1.90, 
+                    'image_path' => '/images/Brotkorb-1-Person.png'
+                ],
+                [
+                    'name' => 'Brotkorb (2 Personen)', 
+                    'description' => 'Frische Brotauswahl als Beilage für zwei Personen.', 
+                    'price' => 2.90, 
+                    'image_path' => '/images/Brotkorb-2-Personen.png'
+                ],
+                [
+                    'name' => 'Haus-Fritten mit Darkbeer-BBQ', 
+                    'description' => 'Knusprige Hausfritten serviert mit unserer hausgemachten Darkbeer-BBQ-Sauce.', 
+                    'price' => 5.00, 
+                    'image_path' => '/images/Haus-Fritten-mit-Darkbeer-BBQ.png'
+                ],
+                [
+                    'name' => 'Süßkartoffelpommes mit Darkbeer-BBQ', 
+                    'description' => 'Knusprige Süßkartoffelpommes mit unserer hausgemachten Darkbeer-BBQ-Sauce.', 
+                    'price' => 6.00, 
+                    'image_path' => '/images/Suesskartoffelpommes-mit-Darkbeer-BBQ.png'
+                ],
+                [
+                    'name' => 'Kartoffelsalat mit Radieschen und Frühlingslauch', 
+                    'description' => 'Klassischer fränkischer Kartoffelsalat, frisch verfeinert mit Radieschen und Frühlingslauch.', 
+                    'price' => 5.00, 
+                    'image_path' => '/images/Kartoffelsalat-mit-Radieschen-und-Fruehlingslauch.png'
+                ],
+                [
+                    'name' => 'Kartoffelpüree mit Röstzwiebeln', 
+                    'description' => 'Cremiges Kartoffelpüree garniert mit goldbraunen Röstzwiebeln. [Allergene: a) a.1) l)]', 
+                    'price' => 5.00, 
+                    'image_path' => '/images/Kartoffelpueree-mit-Roestzwiebeln.png'
+                ],
+                [
+                    'name' => 'Gegrilltes Gemüse mit Yakitorilack', 
+                    'description' => 'Knackiges, gegrilltes Gemüse glasiert mit einer würzigen Soja-Yakitorisauce. [Allergene: f)]', 
+                    'price' => 6.00, 
+                    'image_path' => '/images/Gegrilltes-Gemuese-Yakitorilack.png'
+                ],
+                [
+                    'name' => 'Beilagensalat mit Bierdressing', 
+                    'description' => 'Kleiner, gemischter Salat der Saison mit unserem Spezial-Bierdressing. [Allergene: a) m) o)]', 
+                    'price' => 6.00, 
+                    'image_path' => '/images/Beilagensalat-mit-Bierdressing.png'
+                ],
+                [
+                    'name' => 'Fränkischer Krautsalat', 
+                    'description' => 'Traditionell zubereiteter, feiner Krautsalat.', 
+                    'price' => 4.50, 
+                    'image_path' => '/images/Fraenkischer-Krautsalat.png'
+                ],
+                [
+                    'name' => 'Hopfen-Malz-Butter', 
+                    'description' => 'Hausgemachte, aromatische Butterkreation mit Hopfen und Malz. [Allergene: a) a.1) a.3) g)]', 
+                    'price' => 2.50, 
+                    'image_path' => '/images/Hopfen-Malz-Butter.png'
+                ],
+                [
+                    'name' => 'Darkbeer-BBQ Sauce', 
+                    'description' => 'Unsere kräftig-rauchige Barbecuesauce mit dunklem Bier verfeinert.', 
+                    'price' => 2.50, 
+                    'image_path' => '/images/Darkbeer-BBQ.png'
+                ],
+                [
+                    'name' => 'Chipotlemayo', 
+                    'description' => 'Cremige Mayonnaise mit einer leicht scharfen, geräucherten Chipotle-Note.', 
+                    'price' => 2.50, 
+                    'image_path' => '/images/Chipotlemayo.png'
+                ],
+                [
+                    'name' => 'Cremiger Kräuter-Ziebeleskäs', 
+                    'description' => 'Fränkischer Quark-Klassiker mit frischen Kräutern und Zwiebeln.', 
+                    'price' => 2.50, 
+                    'image_path' => '/images/Cremiger-Kraeuter-Ziebeleskaes.png'
+                ],
+                [
+                    'name' => 'Pfeffersauce', 
+                    'description' => 'Herzhaft-würzige Sauce mit grünem Pfeffer.', 
+                    'price' => 3.00, 
+                    'image_path' => '/images/Pfeffersauce.png'
+                ],
+
+                // --- NACHSPEISE ---
+                [
+                    'name' => 'Hausgemachtes Eis', 
+                    'description' => 'Täglich frisch zubereitete Eiskreationen aus unserer eigenen Herstellung.', 
+                    'price' => 4.00, 
+                    'image_path' => '/images/Hausgemachtes-Eis.png'
+                ],
+                [
+                    'name' => 'Milchreisschaum', 
+                    'description' => 'Fluffiger, hausgemachter Milchreisschaum serviert mit Beeren, knusprigem Hafercrumble und frischem Sauerampfer. [Allergene: a) a.1) a.4)]', 
+                    'price' => 10.00, 
+                    'image_path' => '/images/Milchreisschaum.png'
                 ],
             ],
 
-            'Süßes für danach' => [
+            /* 
+             * Allergen-Legende (Mittagstisch gesamt):
+             * a) glutenhaltige Getreide und -erzeugnisse
+             * a.1) Weizen und -erzeugnisse
+             * a.3) Gerste und -erzeugnisse
+             * a.4) Hafer und -erzeugnisse
+             * c) Eier und -erzeugnisse
+             * d) Fisch und -erzeugnisse
+             * f) Soja und -erzeugnisse
+             * g) Milch und -erzeugnisse (einschließlich Laktose)
+             * h.1) Mandeln und -erzeugnisse
+             * h.2) Haselnüsse und -erzeugnisse
+             * l) Sellerie und -erzeugnisse
+             * m) Senf und -erzeugnisse
+             * o) Schwefeldioxid und Sulfite > 10mg/kg, > 10 mg/l als SO2
+             * 
+             * Alle Preise enthalten die gesetzlich vorgeschriebene MwSt.
+             */
+
+            'Abendkarte (ab 17:00 Uhr)' => [
+                // --- VORSPEISEN & STARTERS ---
                 [
-                    'name' => 'Warmes Schoko-Malz-Törtchen', 
-                    'description' => 'Mit flüssigem Schokoladenkern, dunklem Stout-Bier-Spiegel und einer Kugel cremigen Vanilleeis.', 
-                    'price' => 7.50, 
-                    'image_path' => '/images/schokotoertchen.jpg'
+                    'name' => 'Kohlrabi Carpaccio', 
+                    'description' => 'Mit Senfgurke, Johannisbeere und Haselnüssen. [Allergene: h.2) m)]', 
+                    'price' => 12.00, 
+                    'image_path' => '/images/Kohlrabi-Carpaccio.png'
                 ],
                 [
-                    'name' => 'Affogato al Caffè', 
-                    'description' => 'Eine Kugel cremiges Vanilleeis „ertränkt“ in einem heißen, kräftigen Espresso.', 
-                    'price' => 3.90, 
-                    'image_path' => '/images/affogato.jpg'
+                    'name' => 'Geräucherte Forelle', 
+                    'description' => 'Frankenwald Forelle mit Gurke, Vogelmiere und Buttermilchschaum. [Allergene: a) a.1) g)]', 
+                    'price' => 15.00, 
+                    'image_path' => '/images/Geraeucherte-Forelle.png'
+                ],
+                [
+                    'name' => 'Ziegenkäsemousse', 
+                    'description' => 'Laugengebäck serviert mit cremigem Ziegenfrischkäse, Pfifferlingen, Erdbeere, Sauerampfer und jungem Pflücksalat. [Allergene: a) a.1) c) g) l)]', 
+                    'price' => 13.50, 
+                    'image_path' => '/images/Ziegenkaesemousse.png'
+                ],
+                [
+                    'name' => 'Klare Blumenkohlsuppe', 
+                    'description' => 'Feine, klare Suppe mit Grießnockerln mit würzigem Käse, Pfifferlingen und Tomate. [Allergene: a) a.1) c) f) g)]', 
+                    'price' => 8.00, 
+                    'image_path' => '/images/Klare-Blumenkohlsuppe.png'
+                ],
+                [
+                    'name' => 'Kross gebackenes Steinmühlbrot', 
+                    'description' => 'Ofenfrisches, kross gebackenes Brot aus der regionalen Steinmühle.', 
+                    'price' => 4.50, 
+                    'image_path' => '/images/Kross-gebackenes-Steinmuehlbrot.png'
+                ],
+                [
+                    'name' => 'LB-Starters (3 Stück)', 
+                    'description' => 'Unsere Starters servieren wir als gemeinsame Genussreise für 2 Personen als Vorspeisevariation.', 
+                    'price' => 22.00, 
+                    'image_path' => '/images/LB-Starters-3-Stueck.png'
+                ],
+                [
+                    'name' => 'LB-Starters (5 Stück)', 
+                    'description' => 'Genussreise für 2 Personen mit Brotzeit-Charakter zum Teilen und Probieren. [Allergene: a) a.1) a.3) a.4) f) g)]', 
+                    'price' => 36.00, 
+                    'image_path' => '/images/LB-Starters-5-Stueck.png'
+                ],
+                [
+                    'name' => 'Pimientos de Padron', 
+                    'description' => 'Frittierte Bratpaprika mit Kristallsalz und Chipotle Mayo.', 
+                    'price' => 7.00, 
+                    'image_path' => '/images/Pimientos-de-Padron.png'
+                ],
+                [
+                    'name' => 'Hopfenschinken', 
+                    'description' => '60g dünn aufgeschnittener Hopfenschinken.', 
+                    'price' => 8.50, 
+                    'image_path' => '/images/Hopfenschinken.png'
+                ],
+
+                // --- HAUPTSPEISEN ---
+                [
+                    'name' => 'Hausgemachte Bandnudeln', 
+                    'description' => 'Pfifferlinge, Bohnen, Aprikosen-Miso-Rahmsauce und Haselnüsse. [Allergene: a) a.1) c) f) g) h.2) l)]', 
+                    'price' => 19.00, 
+                    'image_path' => '/images/Hausgemachte-Bandnudeln.png'
+                ],
+                [
+                    'name' => 'Gebackener Blumenkohl', 
+                    'description' => 'Mit Spinat, schwarzem Knoblauch und Hummus. [Zusatzstoffe: 1) | Allergene: a) a.1) f) l) p)]', 
+                    'price' => 20.00, 
+                    'image_path' => '/images/Gebackener-Blumenkohl.png'
+                ],
+                [
+                    'name' => 'Hausgemachte Kartoffelnocken', 
+                    'description' => 'Gebratene Pfifferlinge, Tomate und Bergkäsefond. [Allergene: a) a.1) c) g) l)]', 
+                    'price' => 18.00, 
+                    'image_path' => '/images/Hausgemachte-Kartoffelnocken.png'
+                ],
+                [
+                    'name' => 'Lachsforellenfilet', 
+                    'description' => 'Mangoldsalat, Sauerampfer, Erbsenpüree und Buttersauce. [Allergene: d) g) l) o)]', 
+                    'price' => 26.00, 
+                    'image_path' => '/images/Lachsforellenfilet.png'
+                ],
+                [
+                    'name' => '„Montreal Maple“ Bratwurst', 
+                    'description' => 'Gewinnerbratwurst mit Bratensoße, Käse, Ahornsirup, Spitzkohlrahmsalat, Röstzwiebelpüree und Ahornsirup-Bratensauce.', 
+                    'price' => 15.90, 
+                    'image_path' => '/images/Montreal-Maple-Bratwurst.png'
+                ],
+                [
+                    'name' => 'Crispy Chickenburger', 
+                    'description' => 'Kirschchutney, Pfefferschmand, Bacon, Romanasalat, Tomate und Briochebun. [Allergene: a) a.1) c) f) g) o)]', 
+                    'price' => 16.50, 
+                    'image_path' => '/images/Crispy-Chickenburger.png'
+                ],
+                [
+                    'name' => 'Bunte Salatbowl', 
+                    'description' => 'Blattsalate, Gerstensalat, Rotkohl, Radieschen, Karotte, Tomate, Gurke, Croutons und Kerne. [Allergene: a) l) m) o)]', 
+                    'price' => 12.00, 
+                    'image_path' => '/images/Bunte-Salatbowl.png'
+                ],
+                [
+                    'name' => 'Königsberger Klopse', 
+                    'description' => 'Knackiges Gemüse, Kartoffelpüree, Kapernsauce und Gemüsechips. [Allergene: a) f) m)]', 
+                    'price' => 18.50, 
+                    'image_path' => '/images/Koenigsberger-Klopse.png'
+                ],
+                [
+                    'name' => 'Fränkische Fish & Chips', 
+                    'description' => 'Fischfilet im Bierteig, gezupfter Baggers, cremiger Kräuter-Ziebeleskäs und gepickelte Zwiebeln. [Allergene: a) a.1) a.3) c) d) g) m)]', 
+                    'price' => 24.00, 
+                    'image_path' => '/images/Fraenkisch-Fish-Chips.png'
+                ],
+                [
+                    'name' => 'Gezupftes Schäufele', 
+                    'description' => 'Langzeit gegarte Schulter vom Stroh-Schwein, gebackener Knödel, Krautsalat, Bierjus und Schwartenpopcorn.', 
+                    'price' => 19.00, 
+                    'image_path' => '/images/Gezupftes-Schaeufele.png'
+                ],
+                [
+                    'name' => 'Brezenschnitzel', 
+                    'description' => 'Mariniertes Bierschnitzel in Brezenbröseln mit Kartoffel-Radieschensalat und Frühlingslauch.', 
+                    'price' => 21.00, 
+                    'image_path' => '/images/Brezenschnitzel.png'
+                ],
+                [
+                    'name' => 'Steak Frites', 
+                    'description' => 'Hüftsteak, Zwiebeljus, Hausfritten, Schmortomate, Chipotlemayo und Röstzwiebeln. [Allergene: a) l) o)]', 
+                    'price' => 29.00, 
+                    'image_path' => '/images/Steak-Frites.png'
+                ],
+                [
+                    'name' => 'LB-Burger', 
+                    'description' => '100% Frankenbeef, Bacon-Jam, Käse, Biergurken, Zwiebeln, Salat und Darkbeer-BBQ. [Allergene: a) g) o)]', 
+                    'price' => 16.00, 
+                    'image_path' => '/images/LB-Burger.png'
+                ],
+                [
+                    'name' => 'Pulled Schäufele Burger', 
+                    'description' => 'Gezupftes Schäufele, Krautsalat, Röstzwiebeln, Tomate, Biergurken und Salat. [Allergene: a) f) o)]', 
+                    'price' => 15.00, 
+                    'image_path' => '/images/Pulled-Schaeufele-Burger.png'
+                ],
+                [
+                    'name' => 'Jeffs-Burger', 
+                    'description' => 'Beyond Burger, Cheddar Style Veggie-Käse, Tomate, Biergurken, Salat, Zwiebeln und Darkbeer-BBQ. [Allergene: a) g) o)]', 
+                    'price' => 16.00, 
+                    'image_path' => '/images/Jeffs-Burger.png'
+                ],
+                [
+                    'name' => 'Rumpsteak', 
+                    'description' => 'Saftiges Rumpsteak (ca. 250g), geschnitten wie gewachsen. [Allergene: a) h.1)]', 
+                    'price' => 29.00, 
+                    'image_path' => '/images/Rumpsteak.png'
+                ],
+                [
+                    'name' => 'Halbes Maishähnchen', 
+                    'description' => 'Saftiges Maishähnchen mit Bier-Yakitorilack. [Allergene: f) o)]', 
+                    'price' => 21.00, 
+                    'image_path' => '/images/Halbes-Maishaehnchen.png'
+                ],
+                [
+                    'name' => 'LB-Spareribs', 
+                    'description' => 'Baby Back Ribs (ca. 400g) mit Darkbeer-BBQ. [Allergene: a) h.1)]', 
+                    'price' => 17.00, 
+                    'image_path' => '/images/LB-Spareribs.png'
+                ],
+                [
+                    'name' => 'Beef Brisket', 
+                    'description' => 'Geräucherte Rinderbrust (ca. 250g) mit Biergurken, Zwiebeln, Senfkaviar und Meerrettich. [Allergene: m) o)]', 
+                    'price' => 29.00, 
+                    'image_path' => '/images/Beef-Brisket.png'
+                ],
+
+                // --- BEILAGEN & SAUCEN ---
+                [
+                    'name' => 'Brotkorb', 
+                    'description' => 'Frische Brotauswahl (1 oder 2 Personen).', 
+                    'price' => 1.90, 
+                    'image_path' => '/images/Brotkorb.png'
+                ],
+                [
+                    'name' => 'Haus-Fritten / Süßkartoffelpommes', 
+                    'description' => 'Mit Darkbeer-BBQ.', 
+                    'price' => 5.00, 
+                    'image_path' => '/images/Pommes.png'
+                ],
+                [
+                    'name' => 'Kartoffelsalat / Kartoffelpüree', 
+                    'description' => 'Fränkisch oder mit Röstzwiebeln. [Allergene: a) a.1) l)]', 
+                    'price' => 5.00, 
+                    'image_path' => '/images/Kartoffelbeilagen.png'
+                ],
+                [
+                    'name' => 'Gegrilltes Gemüse', 
+                    'description' => 'Mit Yakitorilack. [Allergene: f)]', 
+                    'price' => 6.00, 
+                    'image_path' => '/images/Gegrilltes-Gemuese.png'
+                ],
+                [
+                    'name' => 'Beilagensalat', 
+                    'description' => 'Mit Bierdressing. [Allergene: a) m) o)]', 
+                    'price' => 6.00, 
+                    'image_path' => '/images/Beilagensalat.png'
+                ],
+                [
+                    'name' => 'Fränkischer Krautsalat', 
+                    'description' => 'Traditionell zubereitet.', 
+                    'price' => 4.50, 
+                    'image_path' => '/images/Fraenkischer-Krautsalat.png'
+                ],
+                [
+                    'name' => 'Hopfen-Malz-Butter', 
+                    'description' => 'Aromatische Butterkreation. [Allergene: a) a.1) a.3) g)]', 
+                    'price' => 2.50, 
+                    'image_path' => '/images/Hopfen-Malz-Butter.png'
+                ],
+                [
+                    'name' => 'Saucen', 
+                    'description' => 'Pfeffersauce, Darkbeer-BBQ, Chipotlemayo oder Kräuter-Ziebeleskäs.', 
+                    'price' => 2.50, 
+                    'image_path' => '/images/Saucen.png'
+                ],
+
+                // --- NACHSPEISEN ---
+                [
+                    'name' => 'Hausgemachtes Eis', 
+                    'description' => 'Täglich frisch zubereitete Eiskreationen.', 
+                    'price' => 4.00, 
+                    'image_path' => '/images/Hausgemachtes-Eis.png'
+                ],
+                [
+                    'name' => 'Falscher Topfenknödel', 
+                    'description' => 'Quarkmousseknödel, Erdbeere und weiße Kaffeesauce. [Allergene: a) a.3) c) g)]', 
+                    'price' => 12.00, 
+                    'image_path' => '/images/Topfenknoedel.png'
+                ],
+                [
+                    'name' => 'Bieramisu X Bagel', 
+                    'description' => 'Blätterteigbagel, Bieramisucreme, Himbeere und Sorbet. [Allergene: a) a.1) c) o)]', 
+                    'price' => 12.00, 
+                    'image_path' => '/images/Bieramisu-Bagel.png'
+                ],
+                [
+                    'name' => 'Milchreisschaum', 
+                    'description' => 'Beeren, Hafercrumble und Sauerampfer. [Allergene: a) a.1) a.4)]', 
+                    'price' => 10.00, 
+                    'image_path' => '/images/Milchreisschaum.png'
                 ],
             ],
+
+            /* * Allergen- & Zusatzstoff-Legende (Abendkarte):
+             * 1) mit Farbstoff
+             * a) glutenhaltige Getreide: a.1) Weizen, a.3) Gerste, a.4) Hafer
+             * c) Eier | d) Fisch | f) Soja | g) Milch (Laktose)
+             * h.1) Mandeln | h.2) Haselnüsse | l) Sellerie | m) Senf
+             * o) Schwefeldioxid/Sulfite | p) Lupinen
+             * * Alle Preise enthalten die gesetzlich vorgeschriebene MwSt.
+             */
 
             'Getränke' => [
                 // === AKTUALISIERT: WEISMAINER ERFRISCHUNGSGETRÄNKE (NEUES SPAẞGETRÄNK/VIBE SORTIMENT) ===
