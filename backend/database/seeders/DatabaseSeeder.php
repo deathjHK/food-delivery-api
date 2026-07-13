@@ -22,7 +22,6 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // 2. Speisekarte inklusive der aktualisierten Weismainer-Vibe-Erfrischungsgetränke
         $menu = [
             'Frühstück & Brunch (Mo-So)' => [
                 [
@@ -871,13 +870,12 @@ class DatabaseSeeder extends Seeder
             ],
         ];
 
-        // 3. Speisekarte intelligent in die Datenbank eintragen
         foreach ($menu as $categoryName => $products) {
             $category = Category::firstOrCreate(['name' => $categoryName]);
 
             foreach ($products as $productData) {
-                // updateOrCreate stellt sicher, dass geänderte Namen/Beschreibungen überschrieben werden
-                $category->products()->updateOrCreate(
+
+            $category->products()->updateOrCreate(
                     ['name' => $productData['name']], 
                     $productData
                 );
