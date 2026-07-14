@@ -26,10 +26,10 @@ class ProductApiTest extends TestCase
 
         // 3. Assert: Prüfe, ob das Ergebnis stimmt
         $response->assertStatus(200) // Ist die API erreichbar? (HTTP 200 OK)
-                 ->assertJsonCount(1) // Haben wir genau ein Produkt zurückbekommen?
+                 ->assertJsonCount(1, 'data') // NEU: Zähle die Elemente im "data" Array
                  ->assertJsonFragment([ // Stimmen die Werte überein?
                      'name' => 'Cheeseburger',
-                     'price' => "5.99"
+                     'price' => 5.99 // NEU: Float statt String (keine Anführungszeichen)
                  ]);
     }
 }
