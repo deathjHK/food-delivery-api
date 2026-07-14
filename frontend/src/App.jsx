@@ -46,7 +46,7 @@ export default function App() {
         <section className="heroContent">
           <div>
             <p className="eyebrow"><Bike size={16}/> Lieferbereit in deiner Umgebung</p>
-            <h1>Frisch gekocht. Kalt geliefert? Niemals.</h1>
+            <h1>Liebesbier auch bei dir Zuhause</h1>
             <p className="subline">Maisel-inspirierte Genussmomente direkt zu dir.</p>
           </div>
           
