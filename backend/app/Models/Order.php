@@ -13,9 +13,9 @@ class Order extends Model
         'user_id',
         'total_amount',
         'status',
-        'delivery_street', // Neu
-        'delivery_zip',    // Neu
-        'delivery_city',   // Neu
+        'delivery_street',
+        'delivery_zip',
+        'delivery_city',
     ];
 
 
