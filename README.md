@@ -69,5 +69,3 @@ docker compose exec laravel.test php artisan test
 * **Seeding:** Idempotent (`updateOrCreate`), verhindert Datenverlust.
 * **Checkout:** Abgesichert durch `DB::transaction()`.
 """
-
-print(readme_content)
