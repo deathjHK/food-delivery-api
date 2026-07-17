@@ -4,7 +4,7 @@ Containerisiertes Backend (Laravel 11) für eine Food-Delivery SPA.
 
 ## Voraussetzungen
 
-* Windows: Docker Desktop optional)
+* Windows: Docker Desktop (optional)
 * WSL - Ubuntu (Powershell: wsl --install)
 * WSL: Git (+GH zur Authentifizierung)
 * WSL: Docker Engine (https://docs.docker.com/engine/install/ubuntu/)
