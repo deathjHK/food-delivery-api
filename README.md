@@ -34,6 +34,7 @@ docker compose down
 ```
 
 Die API ist jetzt erreichbar unter: `http://localhost:8000/api/`
+Das Frontend ist jetzt erreichbar unter: `http://localhost:5173/`
 
 ## Test-Account
 
